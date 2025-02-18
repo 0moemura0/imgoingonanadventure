@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.imgoingonanadventure.ui.tracker.TrackerFragment">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.4"/>
+
+    <View
+        android:id="@+id/viewToCharacter"
+        android:layout_width="40dp"
+        android:layout_marginStart="20dp"
+        android:layout_height="40dp"
+        android:background="@android:drawable/btn_star"
+        app:layout_constraintBottom_toBottomOf="@id/trackerSubtitle"
+        app:layout_constraintEnd_toStartOf="@id/trackerSubtitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/trackerSubtitle" />
+
+    <TextView
+        android:id="@+id/trackerSubtitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        app:layout_constraintEnd_toStartOf="@id/viewToNotes"
+        app:layout_constraintStart_toEndOf="@id/viewToCharacter"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/guideline" />
+
+    <View
+        android:id="@+id/viewToNotes"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="20dp"
+        android:background="@android:drawable/ic_menu_compass"
+        app:layout_constraintBottom_toBottomOf="@id/trackerSubtitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/trackerSubtitle"
+        app:layout_constraintTop_toTopOf="@id/trackerSubtitle"
+        />
+
+    <TextView
+        android:id="@+id/trackerTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/guideline" />
+
+    <TextView
+        android:id="@+id/trackerTitleSteps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/trackerTitle" />
+
+    <View
+        android:background="@android:drawable/ic_menu_directions"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:id="@+id/viewToTracker"
+        android:layout_width="60dp"
+        android:layout_height="60dp"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
