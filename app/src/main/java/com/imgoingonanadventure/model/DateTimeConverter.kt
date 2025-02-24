@@ -6,7 +6,8 @@ import org.joda.time.format.DateTimeFormatter
 import org.joda.time.format.ISODateTimeFormat
 
 object  DateTimeConverter {
-    private val formatter: DateTimeFormatter = ISODateTimeFormat.date()
+    private val formatter: DateTimeFormatter =
+        ISODateTimeFormat.date() //!!!!! in database only day is using!!!!!!
 
     @TypeConverter
     @JvmStatic

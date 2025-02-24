@@ -7,8 +7,8 @@ import org.joda.time.DateTime
 
 @Entity
 data class Note(
-    @PrimaryKey val id: Long,
-    @ColumnInfo val stepDayId: Long,
+    @PrimaryKey val id: Int,
+    @ColumnInfo val stepDayDate: DateTime,
     @ColumnInfo val title: String,
     @ColumnInfo val text: String,
 )

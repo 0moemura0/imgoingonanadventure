@@ -2,7 +2,6 @@ package com.imgoingonanadventure.ui.tracker
 
 import android.Manifest.permission.ACTIVITY_RECOGNITION
 import android.content.Intent
-import android.os.Build
 import android.os.Bundle
 import android.util.Log
 import android.view.LayoutInflater
@@ -16,10 +15,10 @@ import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.lifecycleScope
 import androidx.lifecycle.repeatOnLifecycle
 import com.imgoingonanadventure.App
-import com.imgoingontheadventure.R
-import com.imgoingonanadventure.ui.StepTrackerService
 import com.imgoingonanadventure.ui.character.CharacterFragment
 import com.imgoingonanadventure.ui.notes.NotesFragment
+import com.imgoingonanadventure.ui.service.StepTrackerService
+import com.imgoingontheadventure.R
 import kotlinx.coroutines.flow.collectLatest
 import kotlinx.coroutines.launch
 
@@ -47,6 +46,14 @@ class TrackerFragment : Fragment() {
         val buttonToTracker: View = view.findViewById(R.id.viewToTracker)
 
         setButtons(buttonToCharacter, buttonToNotes,buttonToTracker)
+        observeData(subtitle, title, titleSteps)
+
+        viewModel.getStepState()
+
+        checkPermission()
+    }
+
+    private fun observeData(subtitle: TextView, title: TextView, titleSteps: TextView) {
 
         viewLifecycleOwner.lifecycleScope.launch {
             repeatOnLifecycle(Lifecycle.State.STARTED) {
@@ -64,14 +71,15 @@ class TrackerFragment : Fragment() {
             }
         }
 
-        viewModel.getStepState()
+        StepTrackerService.liveStepCount.observe(viewLifecycleOwner) { stepCount ->
+            viewModel.setStepCount(stepCount)
+        }
     }
 
     private fun setButtons(buttonToCharacter: View, buttonToNotes: View, buttonToTracker: View) {
         buttonToNotes.setOnClickListener { parentFragmentManager.beginTransaction().replace(R.id.container, NotesFragment.newInstance()).commit() }
         buttonToCharacter.setOnClickListener { parentFragmentManager.beginTransaction().replace(R.id.container, CharacterFragment.newInstance()).commit() }
         buttonToTracker.setOnClickListener {
-            checkPermission()
             context?.startForegroundService(Intent(requireContext(), StepTrackerService::class.java))
         }
     }

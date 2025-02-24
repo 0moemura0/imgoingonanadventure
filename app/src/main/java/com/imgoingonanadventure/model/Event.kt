@@ -6,7 +6,7 @@ import androidx.room.PrimaryKey
 
 @Entity
 data class Event(
-    @PrimaryKey val id: Long,
-    @ColumnInfo val distance:Long,
+    @PrimaryKey val id: Int,
+    @ColumnInfo val distance: Int,
     @ColumnInfo val event:String,
 )

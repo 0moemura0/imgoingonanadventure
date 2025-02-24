@@ -11,5 +11,5 @@ interface EventDao {
     suspend fun getAll(): List<Event>
 
     @Query("SELECT * FROM event WHERE distance = :distance")
-    suspend fun getEventWithDistance(distance:Long) : List<Event>
+    suspend fun getEventWithDistance(distance: Int): List<Event>
 }

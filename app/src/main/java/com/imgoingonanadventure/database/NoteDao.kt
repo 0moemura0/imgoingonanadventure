@@ -26,7 +26,7 @@ interface NoteDao {
 
     @Query(
         "SELECT * FROM stepsinday" +
-                " JOIN note ON stepsinday.id = note.stepDayId"+
+                " JOIN note ON stepsinday.date = note.stepDayDate" +
                 " WHERE stepsinday.date = :dateTime"
     )
     suspend fun getAllInfoForNote(dateTime: DateTime): Map<StepsInDay, List<Note>>
