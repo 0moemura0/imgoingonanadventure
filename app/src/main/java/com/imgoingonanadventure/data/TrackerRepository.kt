@@ -1,6 +1,6 @@
 package com.imgoingonanadventure.data
 
-import com.imgoingonanadventure.database.AppDatabase
+import com.imgoingonanadventure.data.database.AppDatabase
 import com.imgoingonanadventure.model.Event
 import com.imgoingonanadventure.model.StepsInDay
 import kotlinx.coroutines.flow.Flow
@@ -13,7 +13,7 @@ class TrackerRepository(
     private val dataStore: SettingsDataStore,
 ) {
 
-    private val eventDao = database.eventDao()
+    private val eventChunkDao = database.eventChunk()
     private val stepsInDayDao = database.stepsInDayDao()
 
     // to usecase?
@@ -29,10 +29,17 @@ class TrackerRepository(
         return stepLength.map { length -> (steps * length).roundToInt() }
     }
 
-    suspend fun getDistancesEvent(distance: Int): List<Event> =
-        eventDao.getEventWithDistance(distance)
+    // to usecase?
+    suspend fun getDistancesEvent(distance: Int): Flow<Event> =
+        dataStore.getEventChunkId().map { chunkId ->
+            eventChunkDao
+                .getChunkWithId(chunkId)
+                .list
+                .findLast { event -> event.distance <= distance }!! //todo
+        }
 
-    suspend fun getStepCount(dateTime: DateTime) : StepsInDay? = stepsInDayDao.getStepsInDay(dateTime)
+    suspend fun getStepCount(dateTime: DateTime): StepsInDay? =
+        stepsInDayDao.getStepsInDay(dateTime)
 
     // to usecase?
     suspend fun setOrAddStepCount(stepSession: Int) {

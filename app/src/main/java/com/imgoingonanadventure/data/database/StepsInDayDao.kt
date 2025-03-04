@@ -1,4 +1,4 @@
-package com.imgoingonanadventure.database
+package com.imgoingonanadventure.data.database
 
 import androidx.room.Dao
 import androidx.room.Insert

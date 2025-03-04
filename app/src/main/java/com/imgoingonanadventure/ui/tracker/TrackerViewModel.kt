@@ -19,13 +19,15 @@ class TrackerViewModel(private val trackerRepository: TrackerRepository) : ViewM
     val state: StateFlow<StepState> = _state.asStateFlow()
 
     fun getStepState() {
-        //todo exception
+        //todo exception + how to manage flows
         viewModelScope.launch {
             val distance: Flow<Int> = trackerRepository.getTrackedDistanceByDate(mockDateTime)
-            distance.map {
-                val steps: StepsInDay? = trackerRepository.getStepCount(mockDateTime)
-                val event: List<Event> = trackerRepository.getDistancesEvent(it)
-                _state.emit(StepState.Data(distance = it, steps = steps, event = event))
+            val steps: StepsInDay? = trackerRepository.getStepCount(mockDateTime)
+            distance.map { dstne ->
+                val event: Flow<Event> = trackerRepository.getDistancesEvent(dstne)
+                event.map { vnt ->
+                    _state.emit(StepState.Data(distance = dstne, steps = steps, event = vnt))
+                }
             }
         }
     }
@@ -38,19 +40,19 @@ class TrackerViewModel(private val trackerRepository: TrackerRepository) : ViewM
                 StepState.Data(
                     distance = 0,
                     steps = steps?.copy(count = steps.count + newSteps),
-                    event = listOf()
+                    event = Event(123, "xcvbnm")
                 )
             )
         }
     }
 
     companion object {
-        val mockDateTime = DateTime(2024,1,1,1,1)
+        val mockDateTime = DateTime(2024, 1, 1, 1, 1)
     }
 }
 
 sealed class StepState {
     data object Loading : StepState()
-    data class Data(val distance: Int, val steps: StepsInDay?, val event: List<Event>) : StepState()
-    data class Error(val error: Throwable): StepState()
+    data class Data(val distance: Int, val steps: StepsInDay?, val event: Event) : StepState()
+    data class Error(val error: Throwable) : StepState()
 }

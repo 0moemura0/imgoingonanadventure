@@ -5,21 +5,21 @@ import org.joda.time.DateTime
 import org.joda.time.format.DateTimeFormatter
 import org.joda.time.format.ISODateTimeFormat
 
-object  DateTimeConverter {
+object DateTimeConverter {
     private val formatter: DateTimeFormatter =
         ISODateTimeFormat.date() //!!!!! in database only day is using!!!!!!
 
     @TypeConverter
     @JvmStatic
-    fun toDateTime(value: String?): DateTime? {
-        return value?.let {
-            formatter.parseDateTime(value)
+    fun toDateTime(data: String?): DateTime? {
+        return data?.let {
+            formatter.parseDateTime(data)
         }
     }
 
     @TypeConverter
     @JvmStatic
-    fun fromDateTime(date: DateTime?): String? {
-        return date?.toString(formatter)
+    fun fromDateTime(data: DateTime?): String? {
+        return data?.toString(formatter)
     }
 }

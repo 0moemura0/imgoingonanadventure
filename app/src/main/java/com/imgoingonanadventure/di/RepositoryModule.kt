@@ -2,7 +2,7 @@ package com.imgoingonanadventure.di
 
 import com.imgoingonanadventure.data.SettingsDataStore
 import com.imgoingonanadventure.data.TrackerRepository
-import com.imgoingonanadventure.database.AppDatabase
+import com.imgoingonanadventure.data.database.AppDatabase
 
 interface RepositoryModule {
 

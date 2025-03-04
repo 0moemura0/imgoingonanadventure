@@ -8,6 +8,7 @@ import androidx.datastore.preferences.core.booleanPreferencesKey
 import androidx.datastore.preferences.core.doublePreferencesKey
 import androidx.datastore.preferences.core.edit
 import androidx.datastore.preferences.core.preferencesOf
+import androidx.datastore.preferences.core.stringPreferencesKey
 import androidx.datastore.preferences.preferencesDataStore
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.map
@@ -22,35 +23,49 @@ class SettingsDataStore(private val context: Context) {
 
     suspend fun setOnboarding() {
         context.dataStore.edit { settings ->
-            val key = booleanPreferencesKey(ONBOARDING_PREF)
+            val key: Preferences.Key<Boolean> = booleanPreferencesKey(ONBOARDING_PREF)
             val currentValue: Boolean = settings[key] ?: false
             settings[key] = currentValue.not()
         }
     }
 
     fun getOnboarding(): Flow<Boolean> {
-        val key = booleanPreferencesKey(ONBOARDING_PREF)
+        val key: Preferences.Key<Boolean> = booleanPreferencesKey(ONBOARDING_PREF)
         return context.dataStore.data
             .map { preferences -> preferences[key] ?: false }
     }
 
     suspend fun setStepLength() {
         context.dataStore.edit { settings ->
-            val key = booleanPreferencesKey(ONBOARDING_PREF)
+            val key: Preferences.Key<Boolean> = booleanPreferencesKey(STEP_LENGTH)
             val currentValue: Boolean = settings[key] ?: false
             settings[key] = currentValue.not()
         }
     }
 
     fun getStepLength(): Flow<Double> {
-        val key = doublePreferencesKey(STEP_LENGTH)
+        val key: Preferences.Key<Double> = doublePreferencesKey(STEP_LENGTH)
         return context.dataStore.data
             .map { preferences -> preferences[key] ?: DEFAULT_STEP_LENGTH }
     }
 
-    companion object{
+    suspend fun setEventChunkId(chunkId: String) {
+        context.dataStore.edit { settings ->
+            val key: Preferences.Key<String> = stringPreferencesKey(EVENT_CHUNK)
+            settings[key] = chunkId
+        }
+    }
+
+    fun getEventChunkId(): Flow<String> {
+        val key: Preferences.Key<String> = stringPreferencesKey(EVENT_CHUNK)
+        return context.dataStore.data
+            .map { preferences -> preferences[key] ?: "0.0" } //todo ??
+    }
+
+    companion object {
         private const val ONBOARDING_PREF = "onboarding"
         private const val STEP_LENGTH = "step_length"
+        private const val EVENT_CHUNK = "event_chunk"
         private const val DEFAULT_STEP_LENGTH: Double = 0.5
     }
 }

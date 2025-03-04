@@ -3,7 +3,7 @@ package com.imgoingonanadventure.di
 import android.content.Context
 import androidx.room.Room
 import com.imgoingonanadventure.data.SettingsDataStore
-import com.imgoingonanadventure.database.AppDatabase
+import com.imgoingonanadventure.data.database.AppDatabase
 
 interface AppModule {
     val repositoryModule: RepositoryModule
