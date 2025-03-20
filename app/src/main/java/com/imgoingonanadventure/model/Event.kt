@@ -8,6 +8,7 @@ import kotlinx.serialization.Serializable
 @Entity
 @Serializable
 data class Event(
-    @PrimaryKey val distance: Int,
+    @PrimaryKey val distance: Double,
+    @ColumnInfo val routeId: String,
     @ColumnInfo val event: String,
 )

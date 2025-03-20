@@ -10,7 +10,9 @@ import androidx.datastore.preferences.core.edit
 import androidx.datastore.preferences.core.preferencesOf
 import androidx.datastore.preferences.core.stringPreferencesKey
 import androidx.datastore.preferences.preferencesDataStore
+import com.imgoingonanadventure.model.RouteSequence
 import kotlinx.coroutines.flow.Flow
+import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.flow.map
 
 private const val DATA_STORE_NAME = "settings"
@@ -49,17 +51,26 @@ class SettingsDataStore(private val context: Context) {
             .map { preferences -> preferences[key] ?: DEFAULT_STEP_LENGTH }
     }
 
-    suspend fun setEventChunkId(chunkId: String) {
+    suspend fun setNextEventChunkId() {
         context.dataStore.edit { settings ->
             val key: Preferences.Key<String> = stringPreferencesKey(EVENT_CHUNK)
-            settings[key] = chunkId
+            val current: String = context.dataStore.data
+                .map { preferences ->
+                    preferences[key] ?: RouteSequence.sequenceMain.first().routeId
+                }
+                .first()
+            settings[key] =
+                RouteSequence.sequenceMain[RouteSequence.sequenceMain.indexOfFirst { it.routeId == current }
+                    .inc()].routeId // todo
         }
     }
 
     fun getEventChunkId(): Flow<String> {
         val key: Preferences.Key<String> = stringPreferencesKey(EVENT_CHUNK)
         return context.dataStore.data
-            .map { preferences -> preferences[key] ?: "0.0" } //todo ??
+            .map { preferences ->
+                preferences[key] ?: RouteSequence.sequenceMain.first().routeId
+            } //todo ??
     }
 
     companion object {

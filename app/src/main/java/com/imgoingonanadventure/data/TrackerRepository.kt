@@ -1,6 +1,8 @@
 package com.imgoingonanadventure.data
 
 import com.imgoingonanadventure.data.database.AppDatabase
+import com.imgoingonanadventure.data.database.EventDao
+import com.imgoingonanadventure.data.database.StepsInDayDao
 import com.imgoingonanadventure.model.Event
 import com.imgoingonanadventure.model.StepsInDay
 import kotlinx.coroutines.flow.Flow
@@ -11,35 +13,40 @@ import kotlin.math.roundToInt
 class TrackerRepository(
     database: AppDatabase,
     private val dataStore: SettingsDataStore,
+    private val eventDataSource: EventDataSource,
 ) {
 
-    private val eventChunkDao = database.eventChunk()
-    private val stepsInDayDao = database.stepsInDayDao()
+    private val eventDao: EventDao = database.eventDao()
+    private val stepsInDayDao: StepsInDayDao = database.stepsInDayDao()
+
+
+    suspend fun getStepCount(): Int = stepsInDayDao.countSteps()
 
     // to usecase?
-    suspend fun getTrackedDistanceByDate(dateTime: DateTime): Flow<Int> {
+    suspend fun getDistance(): Flow<Int> {
         val stepLength = dataStore.getStepLength()
-        return stepLength.map { length ->
-            ((getStepCount(dateTime)?.count ?: 0) * length).roundToInt()
-        }
-    }
-
-    fun getTrackedDistanceBySteps(steps: Int): Flow<Int> {
-        val stepLength = dataStore.getStepLength()
-        return stepLength.map { length -> (steps * length).roundToInt() }
+        return stepLength
+            .map { length -> (getStepCount() * length).roundToInt() }
     }
 
     // to usecase?
-    suspend fun getDistancesEvent(distance: Int): Flow<Event> =
-        dataStore.getEventChunkId().map { chunkId ->
-            eventChunkDao
-                .getChunkWithId(chunkId)
-                .list
-                .findLast { event -> event.distance <= distance }!! //todo
+    suspend fun getDistancesEvent(distance: Int): Flow<Event> {
+        return dataStore.getEventChunkId().map { chunkId ->
+            val local = eventDao.getListWithId(chunkId)
+            val source: List<Event> = local.ifEmpty {
+                val notReallyLocal = eventDataSource.getEventList(chunkId)
+                eventDao.addEventList(notReallyLocal)
+                notReallyLocal
+            }
+            val event: Event = source.findLast { it.distance <= distance }
+                ?: throw NullPointerException("no element in events list somehow")
+            // to usecase?
+            if (event.event == source.last().event) {
+                dataStore.setNextEventChunkId()
+            }
+            event
         }
-
-    suspend fun getStepCount(dateTime: DateTime): StepsInDay? =
-        stepsInDayDao.getStepsInDay(dateTime)
+    }
 
     // to usecase?
     suspend fun setOrAddStepCount(stepSession: Int) {

@@ -16,9 +16,9 @@ interface StepsInDayDao {
     @Update
     suspend fun updateStepsInDay(stepsInDay: StepsInDay)
 
-    @Query("SELECT * FROM stepsinday")
-    suspend fun getAll(): List<StepsInDay>
-
     @Query("SELECT * FROM stepsinday WHERE date = :dateTime")
-    suspend fun getStepsInDay(dateTime:DateTime): StepsInDay?
+    suspend fun getStepsInDay(dateTime: DateTime): StepsInDay?
+
+    @Query("SELECT SUM(count) FROM stepsinday")
+    suspend fun countSteps(): Int
 }

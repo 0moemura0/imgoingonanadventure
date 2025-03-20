@@ -1,5 +1,6 @@
 package com.imgoingonanadventure.di
 
+import com.imgoingonanadventure.data.EventDataSource
 import com.imgoingonanadventure.data.SettingsDataStore
 import com.imgoingonanadventure.data.TrackerRepository
 import com.imgoingonanadventure.data.database.AppDatabase
@@ -12,8 +13,13 @@ interface RepositoryModule {
 class RepositoryModuleImpl(
     private val appDatabase: AppDatabase,
     private val dataStore: SettingsDataStore,
-): RepositoryModule {
+    private val eventDataSource: EventDataSource,
+) : RepositoryModule {
 
     override val trackerRepository: TrackerRepository
-        get() = TrackerRepository(appDatabase, dataStore)
+        get() = TrackerRepository(
+            database = appDatabase,
+            dataStore = dataStore,
+            eventDataSource = eventDataSource,
+        )
 }

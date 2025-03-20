@@ -22,7 +22,6 @@ class StepCountEventListener(
         val stepsSinceLastReboot: Int = event.values[0].toInt()
         steps += stepsSinceLastReboot
         update(steps)
-        Log.d(TAG, "Steps since last reboot: $stepsSinceLastReboot")
         Log.d(TAG, "Steps: $steps")
     }
 

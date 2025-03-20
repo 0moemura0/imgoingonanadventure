@@ -7,18 +7,14 @@ import java.io.File
 import java.io.FileOutputStream
 import java.io.IOException
 import java.io.PrintWriter
+import kotlin.system.exitProcess
 
 
 class CrashLogger(private val context: Context) : Thread.UncaughtExceptionHandler {
-    override fun uncaughtException(thread: Thread, throwable: Throwable) {
-        // Save crash log to a file
-        saveCrashLog(context, throwable)
-        Thread.getDefaultUncaughtExceptionHandler()?.uncaughtException(thread, throwable)
-//        // Terminate the app or perform any other necessary action
-//        android.os.Process.killProcess(android.os.Process.myPid())
-//        exitProcess(1)
-    }
 
+    override fun uncaughtException(thread: Thread, throwable: Throwable) {
+        saveCrashLog(context, throwable)
+    }
 
     private fun saveCrashLog(context: Context, throwable: Throwable) {
         val logFile = getLogFile(context)
@@ -32,6 +28,9 @@ class CrashLogger(private val context: Context) : Thread.UncaughtExceptionHandle
             }
         } catch (e: IOException) {
             Log.e(LOG_TAG, "Failed to save crash log", e)
+        } finally {
+            android.os.Process.killProcess(android.os.Process.myPid())
+            exitProcess(1)
         }
     }
 

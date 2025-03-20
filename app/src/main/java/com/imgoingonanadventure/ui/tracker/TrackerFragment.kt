@@ -23,7 +23,7 @@ import kotlinx.coroutines.flow.collectLatest
 import kotlinx.coroutines.launch
 
 class TrackerFragment : Fragment() {
-    
+
     private val viewModel: TrackerViewModel by viewModels<TrackerViewModel> {
         App.appModule.viewModuleModule.trackerViewModelFactory
     }
@@ -45,7 +45,7 @@ class TrackerFragment : Fragment() {
         val buttonToNotes: View = view.findViewById(R.id.viewToNotes)
         val buttonToTracker: View = view.findViewById(R.id.viewToTracker)
 
-        setButtons(buttonToCharacter, buttonToNotes,buttonToTracker)
+        setButtons(buttonToCharacter, buttonToNotes, buttonToTracker)
         observeData(subtitle, title, titleSteps)
 
         viewModel.getStepState()
@@ -58,14 +58,18 @@ class TrackerFragment : Fragment() {
         viewLifecycleOwner.lifecycleScope.launch {
             repeatOnLifecycle(Lifecycle.State.STARTED) {
                 viewModel.state.collectLatest { state ->
-                    when(state){
+                    when (state) {
                         is StepState.Loading -> Unit
                         is StepState.Data -> {
-                            subtitle.text = state.event.map { it.event }.toString()//todo вынести
+                            subtitle.text = state.event.event
                             title.text = state.distance.toString()
-                            titleSteps.text = state.steps?.count.toString()
+                            titleSteps.text = state.steps.toString()
                         }
-                        is StepState.Error -> Log.e(TAG, "onViewCreated: ${state.error.stackTrace.take(5)}")
+
+                        is StepState.Error -> Log.e(
+                            TAG,
+                            "onViewCreated: ${state.error.stackTrace.take(5)}"
+                        )
                     }
                 }
             }
@@ -77,20 +81,32 @@ class TrackerFragment : Fragment() {
     }
 
     private fun setButtons(buttonToCharacter: View, buttonToNotes: View, buttonToTracker: View) {
-        buttonToNotes.setOnClickListener { parentFragmentManager.beginTransaction().replace(R.id.container, NotesFragment.newInstance()).commit() }
-        buttonToCharacter.setOnClickListener { parentFragmentManager.beginTransaction().replace(R.id.container, CharacterFragment.newInstance()).commit() }
+        buttonToNotes.setOnClickListener {
+            parentFragmentManager.beginTransaction()
+                .replace(R.id.container, NotesFragment.newInstance()).commit()
+        }
+        buttonToCharacter.setOnClickListener {
+            parentFragmentManager.beginTransaction()
+                .replace(R.id.container, CharacterFragment.newInstance()).commit()
+        }
         buttonToTracker.setOnClickListener {
-            context?.startForegroundService(Intent(requireContext(), StepTrackerService::class.java))
+            context?.startForegroundService(
+                Intent(
+                    requireContext(),
+                    StepTrackerService::class.java
+                )
+            )
         }
     }
 
     private fun checkPermission() {
         val activityPermission = ACTIVITY_RECOGNITION
-        val activityRecognitionPermission = PermissionChecker.checkSelfPermission(requireContext(), activityPermission)
+        val activityRecognitionPermission =
+            PermissionChecker.checkSelfPermission(requireContext(), activityPermission)
 
         if (activityRecognitionPermission != PermissionChecker.PERMISSION_GRANTED) {
             @Suppress("DEPRECATION")
-            requestPermissions(arrayOf(activityPermission) , 1)//todo add result
+            requestPermissions(arrayOf(activityPermission), 1)//todo add result
         }
     }
 

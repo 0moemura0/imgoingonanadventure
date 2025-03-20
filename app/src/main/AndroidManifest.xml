@@ -19,18 +19,25 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ImGoingOnAnAdventure"
         tools:targetApi="31">
-        <service
-            android:name="com.imgoingonanadventure.ui.service.StepTrackerService"
-            android:enabled="true"
-            android:exported="false"
-            android:foregroundServiceType="health" />
+
         <activity
-            android:name="com.imgoingonanadventure.ui.MainActivity"
+            android:name="com.imgoingonanadventure.ui.splash.SplashActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity
+            android:name="com.imgoingonanadventure.ui.MainActivity"
+            android:exported="false" />
+
+        <service
+            android:name="com.imgoingonanadventure.ui.service.StepTrackerService"
+            android:enabled="true"
+            android:exported="false"
+            android:foregroundServiceType="health" />
+
     </application>
 </manifest>
