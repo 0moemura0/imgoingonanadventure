@@ -38,6 +38,7 @@ class TrackerFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         val image: ImageView = view.findViewById(R.id.imageBackground)
+        val imageGrass: ImageView = view.findViewById(R.id.viewGrass)
         val subtitle: TextView = view.findViewById(R.id.trackerSubtitle)
         val title: TextView = view.findViewById(R.id.trackerTitle)
         val buttonToSettings: View = view.findViewById(R.id.viewToSettings)
@@ -45,7 +46,7 @@ class TrackerFragment : Fragment() {
         val buttonToTracker: View = view.findViewById(R.id.viewToTracker)
 
         setButtons(buttonToSettings, buttonToNotes, buttonToTracker)
-        observeData(subtitle, title, image)
+        observeData(subtitle, title, image, imageGrass)
 
         viewModel.getStepState()
 
@@ -55,7 +56,8 @@ class TrackerFragment : Fragment() {
     private fun observeData(
         subtitle: TextView,
         title: TextView,
-        image: ImageView
+        image: ImageView,
+        imageGrass: ImageView
     ) {
         viewLifecycleOwner.lifecycleScope.launch {
             repeatOnLifecycle(Lifecycle.State.STARTED) {
@@ -69,7 +71,10 @@ class TrackerFragment : Fragment() {
         }
         viewLifecycleOwner.lifecycleScope.launch {
             repeatOnLifecycle(Lifecycle.State.STARTED) {
-                viewModel.stateImage.collect { image.setImageResource(it) }
+                viewModel.stateImage.collect {
+                    imageGrass.setImageResource(it.grassId)
+                    image.setImageResource(it.imageId)
+                }
             }
         }
 

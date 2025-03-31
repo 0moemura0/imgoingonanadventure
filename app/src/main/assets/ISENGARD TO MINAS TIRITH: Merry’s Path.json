@@ -1,0 +1,497 @@
+{
+  "routeId": "3.2",
+  "list": [
+    {
+      "distance": "0",
+      "event": "Isengard. Confrontation with Saruman. Gandalf breaks Saruman&#8217;s staff. Grima Wormtongue casts down the palant&#237;r of Orthanc. Pippin retrieves it, but Gandalf quickly takes it. Leave Isengard (ca. 4 p.m.)"
+    },
+    {
+      "distance": "0.5",
+      "event": "Pass through the gates of Isengard. Follow the stone-paved road south"
+    },
+    {
+      "distance": "2",
+      "event": "Flooded spots gradually are disappearing"
+    },
+    {
+      "distance": "4",
+      "event": "Pass the pillar of the White Hand. Ents have broken the hand apart"
+    },
+    {
+      "distance": "6",
+      "event": "Stone pavement ends. Highway continues"
+    },
+    {
+      "distance": "8",
+      "event": "Night falls. Waxing moon rises"
+    },
+    {
+      "distance": "10",
+      "event": "All around are tree stumps, weeds and thorns"
+    },
+    {
+      "distance": "14",
+      "event": "Leave the Wizard&#8217;s Vale. Highway goes SSE toward the Fords"
+    },
+    {
+      "distance": "16",
+      "event": "Reach the campsite of the night before. Turn west"
+    },
+    {
+      "distance": "17",
+      "event": "Camp (ca. 10 p.m.). In a dale next to the south-facing slope of Dol Baran, the last hill of the northern ranges. Heather and bracken fern are turning green. While Gandalf sleeps, Pippin takes the palant&#237;r and is seen by Sauron. Gandalf plans to ride out at once with Pippin. When a Nazg&#251;l rides over, he warns Th&#233;oden not to wait for the dawn to leave"
+    },
+    {
+      "distance": "17",
+      "event": "Aragorn and Merry, Legolas and Gimli ride out with Th&#233;oden, &#201;omer and 20 Riders (ca. midnight)"
+    },
+    {
+      "distance": "18",
+      "event": "Return to the highway and turn south"
+    },
+    {
+      "distance": "33",
+      "event": "Company crosses the Fords of Isen"
+    },
+    {
+      "distance": "35",
+      "event": "They are overtaken by the Grey Company: Halbarad D&#250;nadan and 30 rangers of the North (summoned by Galadriel), plus Elrond&#8217;s sons: Elladan and Elrohir. Moon is westering, but shines out through clouds"
+    },
+    {
+      "distance": "48",
+      "event": "Reach the road to the Deeping Coomb and turn south to Helm&#8217;s Deep"
+    },
+    {
+      "distance": "54",
+      "event": "Climb upward through the Coomb"
+    },
+    {
+      "distance": "57.5",
+      "event": "Pass through Helm&#8217;s Dike"
+    },
+    {
+      "distance": "58",
+      "event": "Reach Helm&#8217;s Deep (ca. 6 a.m.). Enter the Hornburg. REST. Late morning Legolas and Gimli show Merry around the Deep. Lunch with Th&#233;oden and Riders. Aragorn confronts Sauron in the palant&#237;r and learns of the Black Fleet of Umbar. After consulting with Th&#233;oden, he decides to take the open road and ride for the Paths of the Dead. Merry rides out with Rohirrim (1 p.m.)"
+    },
+    {
+      "distance": "58.5",
+      "event": "Riders pass through Helm&#8217;s Dike. Aragorn, Legolas and Gimli watch"
+    },
+    {
+      "distance": "59",
+      "event": "Ride down through the Deeping Coomb"
+    },
+    {
+      "distance": "60",
+      "event": "Turn east on a path that skirts the foothills"
+    },
+    {
+      "distance": "61",
+      "event": "Path turns south among the hills"
+    },
+    {
+      "distance": "62",
+      "event": "Reach crest of a ridge"
+    },
+    {
+      "distance": "64",
+      "event": "Valley"
+    },
+    {
+      "distance": "66",
+      "event": "Ridge. Far above rise some of the highest peaks of the White Mountains"
+    },
+    {
+      "distance": "72",
+      "event": "Reach a small stream. Turn north. Merry rides with Th&#233;oden"
+    },
+    {
+      "distance": "74",
+      "event": "Cross stream. Continue east"
+    },
+    {
+      "distance": "78",
+      "event": "Camp by a stream in a shallow valley"
+    },
+    {
+      "distance": "78",
+      "event": "Leave just after dawn. Cross stream and climb hill"
+    },
+    {
+      "distance": "80",
+      "event": "Reach hillcrest. Turn SW along the crest"
+    },
+    {
+      "distance": "84",
+      "event": "Leave hillcrest and descend hillslope"
+    },
+    {
+      "distance": "86",
+      "event": "Reach a small stream. Turn north. Merry rides with Th&#233;oden"
+    },
+    {
+      "distance": "88",
+      "event": "Cross stream. Continue east"
+    },
+    {
+      "distance": "91",
+      "event": "Ridge. Turn south, climbing onto higher mountainsides now"
+    },
+    {
+      "distance": "97",
+      "event": "Cross a small stream. Brief stop. Eat"
+    },
+    {
+      "distance": "100",
+      "event": "Climb a still higher ridge. Reach crest. Turn south along crest"
+    },
+    {
+      "distance": "102",
+      "event": "Descend steep hillside from the crest. Zig-zag path"
+    },
+    {
+      "distance": "107",
+      "event": "Reach stream. Cross stream and turn north. Merry rides with Th&#233;oden"
+    },
+    {
+      "distance": "108",
+      "event": "Turn east from valley. Angle ENE up a high mountain ridge"
+    },
+    {
+      "distance": "111",
+      "event": "Reach crest"
+    },
+    {
+      "distance": "114",
+      "event": "Angle south down steep slope"
+    },
+    {
+      "distance": "118",
+      "event": "Dusk. Reach valley. Camp by small stream. Snow on peak above camp"
+    },
+    {
+      "distance": "118",
+      "event": "Leave just after dawn. Cross stream and climb a slight rise"
+    },
+    {
+      "distance": "122",
+      "event": "Reach a swift-flowing mountain stream. Turn NE beside it. Merry rides with Th&#233;oden"
+    },
+    {
+      "distance": "128",
+      "event": "Cross stream. Continue alongside it. Merry rides with Th&#233;oden"
+    },
+    {
+      "distance": "130",
+      "event": "Turn east from stream. Climb a steep mountainside. Trees more scarce"
+    },
+    {
+      "distance": "135",
+      "event": "Reach the highest crest thus far. No trees. Merry rides with Th&#233;oden"
+    },
+    {
+      "distance": "140",
+      "event": "Snake down steep slope, pitted by bowl-shaped hollows: old cirques. Eat"
+    },
+    {
+      "distance": "146",
+      "event": "Cross a rushing stream just below where three mountain rills join, cascading down from glaciers above on the mountain peak"
+    },
+    {
+      "distance": "150",
+      "event": "Zig-zag up an open mountainside to a steep-cut ridge crest"
+    },
+    {
+      "distance": "158",
+      "event": "CAMP on the crest of the High Pass. COLD. No water source"
+    },
+    {
+      "distance": "158",
+      "event": "Angle SE down the steep-falling slope of the ridge"
+    },
+    {
+      "distance": "170",
+      "event": "Reach a small stream tumbling down from the peak. Follow valley east. Pines begin to appear"
+    },
+    {
+      "distance": "180",
+      "event": "A second stream joins the first. Valley deepens and has pine-clad walls. Eat"
+    },
+    {
+      "distance": "186",
+      "event": "Cross the upland stream and follow the right bank"
+    },
+    {
+      "distance": "192",
+      "event": "The stream begins to cut a ravine on the left. In places the path climbs away along the valleyside"
+    },
+    {
+      "distance": "196",
+      "event": "Reach the valley mouth above Harrowdale. Valley is already in shadow and one light shines out. Stream plunges down a waterfall. Path turns SE from the western ravine and descends the steepsided wall of the valley. Fir-woods cloak the valley walls. Starkhorn looms over them on the south, its peak shining red in the sunset (ca. 5:30 p.m.)"
+    },
+    {
+      "distance": "196.5",
+      "event": "Ford the Snowbourne. Cross to the valley floor and reach the road from Edoras. Most riders camp in the valley, joining the thousands already waiting there. Th&#233;oden&#8217;s company continues east to the Hold. "
+    },
+    {
+      "distance": "197",
+      "event": "They climb the switchback road &#8216;Stair of the Hold&#8217; some hundreds of feet up the mountain face. Ancient statues mark each turn of the road: the P&#250;kel-men. A last cutting climbs a short slope"
+    },
+    {
+      "distance": "198",
+      "event": "Reach the Firienfeld of Dunharrow. &#201;owyn greets them there. Camp. Theoden&#8217;s Pavilion is set north of the standing stone-lined path. Merry has a small tent nearby. As Merry and others eat with the king, a errand-rider of Gondor arrives with &#8216;The Red Arrow&#8217; &#8211; a plea to come to the aid of Minas Tirith. "
+    },
+    {
+      "distance": "198",
+      "event": "The dark has already reached Dunharrow when Merry is awakened in the morning (ca. 7 a.m.). &#201;owyn arms Merry. Th&#233;oden&#8217;s company leaves the Hold (ca. 9 a.m.). Merry rides Stybba"
+    },
+    {
+      "distance": "199",
+      "event": "Ride down the &#8216;Stair of the Hold&#8217; and reach the valley"
+    },
+    {
+      "distance": "199.5",
+      "event": "Road turns north to Edoras. Th&#233;oden&#8217;s company is joined by 5500 riders fully armed, and many hundreds of other men with horses. Merry notices Dernhelm among the host"
+    },
+    {
+      "distance": "200",
+      "event": "Opposite the waterfalls from the western ravine"
+    },
+    {
+      "distance": "204",
+      "event": "Hamlet of Underharrow. Peaks of Irensaga are high above"
+    },
+    {
+      "distance": "210",
+      "event": "Hamlet of Upbourn"
+    },
+    {
+      "distance": "218",
+      "event": "Leave Harrowdale. Reach the road from the ford of the Snowbourne. Noon. Halt a short while on the road below Edoras. Eat. The Muster of Rohan &#8211; 60 more riders arrive, making the muster complete: &#8220;6000 spears to Sunlending.&#8221; Th&#233;oden refuses for Merry to ride with the Rohirrim. &#201;owyn (disguised as Dernhelm) takes Merry in secret"
+    },
+    {
+      "distance": "220",
+      "event": "The road curves easterly around the mountain spur behind Edoras"
+    },
+    {
+      "distance": "222",
+      "event": "The Snowbourne meanders through willow trees left of the road"
+    },
+    {
+      "distance": "232",
+      "event": "The road curves southeast, hugging the eastern foothills of Irensaga"
+    },
+    {
+      "distance": "240",
+      "event": "Hills draw away to the south. Road continues through willows"
+    },
+    {
+      "distance": "250",
+      "event": "Scattered trees broaden into a wide willow thicket where the Snowbourne meets the Entwash"
+    },
+    {
+      "distance": "254",
+      "event": "Camp in the Willow thicket (ca. 7 p.m.)"
+    },
+    {
+      "distance": "254",
+      "event": "Leave at first &#8216;light&#8217; in the gray gloom"
+    },
+    {
+      "distance": "258",
+      "event": "Willow woods end. Road turns more south, parallels the Entwash"
+    },
+    {
+      "distance": "270",
+      "event": "Reach the area called the &#8216;Folde&#8217;, tucked against the hills, sheltered from the west and the south. A snowcapped peak rises on the south. North across the river the wide grassy Plains of Rohan can be seen"
+    },
+    {
+      "distance": "280",
+      "event": "Road turns more to the east"
+    },
+    {
+      "distance": "286",
+      "event": "Cross a small stream"
+    },
+    {
+      "distance": "297",
+      "event": "Cross a small stream. Brief stop to eat"
+    },
+    {
+      "distance": "310",
+      "event": "30 miles north of the road the Entwash, flowing more slowly in the level plains, is choked with vegetation and splits into multiple braided channels"
+    },
+    {
+      "distance": "317",
+      "event": "Cross a small stream. Enter the area called the &#8216;Fenmarch&#8217; &#8211; a wetter area, especially north of the road where the Entwash becomes sluggish and starts to expand outward into a delta"
+    },
+    {
+      "distance": "334",
+      "event": "Dusk. Cross a small stream. Camp"
+    },
+    {
+      "distance": "334",
+      "event": "Leave at first light. Still dark and gloomy"
+    },
+    {
+      "distance": "337",
+      "event": "South of the road great oak trees begin to appear &#8211; outliers of Firien Wood. On the north mists rise above the fens of the Entwash"
+    },
+    {
+      "distance": "342",
+      "event": "Lone man, fleeing west, tells of war on the plains and the Wold"
+    },
+    {
+      "distance": "350",
+      "event": "Northeast across the plain (80 miles away) the East Wall of Rohan and the Western Emyn Muil could be seen if it were clear"
+    },
+    {
+      "distance": "353",
+      "event": "Cross the Mering Stream: Gondor. Enter the heart of the Firien Wood. "
+    },
+    {
+      "distance": "364",
+      "event": "The beacon of Halifirien lies right of the road on a hill which rises above the trees. Its fires are now extinguished"
+    },
+    {
+      "distance": "375",
+      "event": "Leave Firien Wood"
+    },
+    {
+      "distance": "377",
+      "event": "Cross a small stream. Brief stop to eat"
+    },
+    {
+      "distance": "385",
+      "event": "The snowcapped peak above Calenhad rises to the right"
+    },
+    {
+      "distance": "396",
+      "event": "The beacon tower of Calenhad stands on a foothill of Calenhad peak"
+    },
+    {
+      "distance": "414",
+      "event": "Cross a small stream. Camp"
+    },
+    {
+      "distance": "414",
+      "event": "Leave at first light"
+    },
+    {
+      "distance": "425",
+      "event": "Cross a small stream. The beacon hill of Minrimmon is on the right"
+    },
+    {
+      "distance": "430",
+      "event": "To the north the delta of the Entwash has broadened to over 50 miles. Rauros lies beyond, 100 miles due north of the road"
+    },
+    {
+      "distance": "440",
+      "event": "High above to the south rise the sawtoothed tips of Rimmon &#8211; the highest peak in the eastern White Mountains"
+    },
+    {
+      "distance": "457",
+      "event": "Pass the beacon hill of Erelas. Brief pause to eat"
+    },
+    {
+      "distance": "471",
+      "event": "Cross a small stream"
+    },
+    {
+      "distance": "482",
+      "event": "Pass the beacon on Nardol, the &#8216;Fire Hill.&#8217;"
+    },
+    {
+      "distance": "488",
+      "event": "Cross a small stream &#8211; the last which empties into the delta of the Entwash. West edge of Druadan Forest south of the road"
+    },
+    {
+      "distance": "493",
+      "event": "Turn south into Druadan Forest to camp out of sight of the road. Scouts report that trenches and stakes block the road 6 miles east"
+    },
+    {
+      "distance": "494",
+      "event": "Camp in the pine-woods near the hill of Eilenach Beacon"
+    },
+    {
+      "distance": "494",
+      "event": "Late in the night Merry is wakeful and hears drums. Follows Elfhelm to Th&#233;oden. Gh&#226;n-buri-Gh&#226;n, chief of the Wild Men, offers to guide the Riders through a hidden way. They depart as quickly as possible"
+    },
+    {
+      "distance": "496",
+      "event": "The passage south through the woods is slow and pathless"
+    },
+    {
+      "distance": "500",
+      "event": "kirt the western foot of the hill of Eilenach"
+    },
+    {
+      "distance": "509",
+      "event": "Reach the west end of Stonewain Valley: the remains of a vast quarry, mined into both sides of an east-running valley. Though overgrown, the road still allows four horses to ride abreast. Move more quickly"
+    },
+    {
+      "distance": "515",
+      "event": "The valley road descends from west to east. Light more dim than ever"
+    },
+    {
+      "distance": "530",
+      "event": "East end of Stonewain Valley. Road continues through trees"
+    },
+    {
+      "distance": "536",
+      "event": "Northeast through openings they can see the beacon hill of Amon D&#238;n"
+    },
+    {
+      "distance": "540",
+      "event": "Mindolluin rises to the south. Thickets of the Grey Wood hide road"
+    },
+    {
+      "distance": "544",
+      "event": "Camp (ca. 4:30 p.m.) in the heart of the Grey Wood. Scouts report"
+    },
+    {
+      "distance": "544",
+      "event": "Riders move east toward the main road during the night (ca. 3 a.m.)"
+    },
+    {
+      "distance": "546",
+      "event": "Reach the east edge of the Grey Wood"
+    },
+    {
+      "distance": "547",
+      "event": "Meet the Great West Road. Turn toward the city. Ride quickly"
+    },
+    {
+      "distance": "560",
+      "event": "Road turns more south nearing the skirts of Mt. Mindolluin. See a red glow on clouds ahead: fires of Minas Tirith"
+    },
+    {
+      "distance": "563",
+      "event": "Riders spread out on each side of the road. Ride very fast"
+    },
+    {
+      "distance": "565",
+      "event": "Th&#233;oden briefs his three captains and calls out to encourage his Riders"
+    },
+    {
+      "distance": "568",
+      "event": "Dawn (above the reek). Reach the Rammas Echor: the outwalls of the Pelennor Fields. The enemy has thrown down the walls and the Riders pass through the breaches, killing the few orcs"
+    },
+    {
+      "distance": "570",
+      "event": "Th&#233;oden leads the Riders slightly to the east, moving quietly"
+    },
+    {
+      "distance": "573",
+      "event": "Stop. Can smell the burning of the city. Merry feels a south wind and can see the clouds breaking far in the south. They see the flash and hear the BOOM from the breaking of the Gates. Th&#233;oden cries out to the Rohirrim and blows a great blast on a horn: &#8220;Great horns of the North, wildly blowing. Rohan had come at last.&#8221; Riders surge forth, with Th&#233;oden in the center. The Battle of the Pelennor Fields"
+    },
+    {
+      "distance": "577",
+      "event": "Th&#233;oden is crushed, pinned beneath his steed when the Lord of the Nazgul descends. &#201;owyn (aided by Merry) slays the Witch King. &#201;owyn falls. "
+    },
+    {
+      "distance": "578",
+      "event": "Merry follows the litter bearers into the city of Minas Tirith"
+    }
+  ]
+}

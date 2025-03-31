@@ -1,0 +1,550 @@
+[
+  {
+    "routeId": "0.3",
+    "distance": "0",
+    "event": "Breaking of the Fellowship. Noon. Frodo decides to go to Mordor alone, but Sam guesses. Reaches lake as Frodo is leaving. They go together"
+  },
+  {
+    "routeId": "0.3",
+    "distance": "0.5",
+    "event": "Reach shelving shore on the south slopes of Amon Lhaw. Hide boat"
+  },
+  {
+    "routeId": "0.3",
+    "distance": "1",
+    "event": "Head SE into the \"strange twisted knot of hills\" – the eastern Emyn Muil."
+  },
+  {
+    "routeId": "0.3",
+    "distance": "2",
+    "event": "Reach south edge of the hills: \"a sheer, high, impassible cliff overlooking the marshland of Nindalf 'the Wetwang', which lies East of the Anduin all along the delta of the Entwash\""
+  },
+  {
+    "routeId": "0.3",
+    "distance": "8",
+    "event": "Reach steep east face of inner hills. Climb down"
+  },
+  {
+    "routeId": "0.3",
+    "distance": "10",
+    "event": "Camp about dusk. Hide behind boulders just back from the south-facing cliff. See glow of Gollum's eyes"
+  },
+  {
+    "routeId": "0.3",
+    "distance": "14",
+    "event": "Climb into a gully and out. Forced to turn more to the north"
+  },
+  {
+    "routeId": "0.3",
+    "distance": "26",
+    "event": "Enter another ravine. Cliff still too high to descend"
+  },
+  {
+    "routeId": "0.3",
+    "distance": "32",
+    "event": "Cliff begins to curve much more to the north. The Wetwang curves south"
+  },
+  {
+    "routeId": "0.3",
+    "distance": "37",
+    "event": "Wind around rough area, forced back, away from cliff"
+  },
+  {
+    "routeId": "0.3",
+    "distance": "40",
+    "event": "Continue in barren, rugged hills' not even grass. Stop to eat"
+  },
+  {
+    "routeId": "0.3",
+    "distance": "43",
+    "event": "Zig-zag into ravine. The south edge of the Dead Marshes appear east of the tumbled lands below"
+  },
+  {
+    "routeId": "0.3",
+    "distance": "47",
+    "event": "Get lost in ravine. Realize they are going in circles. Runoff from the ravine goes to the marshes"
+  },
+  {
+    "routeId": "0.3",
+    "distance": "50",
+    "event": "Look out toward Mordor. Can smell the Dead Marshes"
+  },
+  {
+    "routeId": "0.3",
+    "distance": "53",
+    "event": "Must swing far back, then east again. Stop to listen for signs of Gollum"
+  },
+  {
+    "routeId": "0.3",
+    "distance": "54",
+    "event": "Return to cliff-top, but rough \"scored and weathered rock\" forces them away"
+  },
+  {
+    "routeId": "0.3",
+    "distance": "58",
+    "event": "Cliff face is now lower, but they do not notice as they are not by the edge. Scramble into a deep cleft and out again"
+  },
+  {
+    "routeId": "0.3",
+    "distance": "70",
+    "event": "Reach the deepest ravine thus far – a rock fault. Far wall is “many fathoms high.” Frodo climbs down. Finds a few gnarled trees, mainly firs, but only for about 50 yards. Stumps continue to cliff edge. As cliff is lower, Frodo decides they should descend: the rock has “slipped and cracked.” Storm arrives just as Frodo starts down. He slithers down to a rock ledge below. Sam remembers his rope and pulls Frodo up. After the storm they use the rope to descend."
+  },
+  {
+    "routeId": "0.3",
+    "distance": "74",
+    "event": "Head back toward cliff, angling south. Too difficult to go far. No spot to hide. Stop next to a boulder. See Gollum crawling down cliff. Capture Gollum. Frodo extracts pledge, then releases Gollum"
+  },
+  {
+    "routeId": "0.3",
+    "distance": "78",
+    "event": "Reach the rift they had seen before, but farther north where sides are lower. Climb down into it (15 feet deep). Follow it south beside a \"shallow stony stream\""
+  },
+  {
+    "routeId": "0.3",
+    "distance": "83",
+    "event": "Gully turns east, broadens and grows more shallow"
+  },
+  {
+    "routeId": "0.3",
+    "distance": "84",
+    "event": "Dawn. Camp in gully on a wide flat shelf of stone. Gully now only 6 feet deep. Frodo and Sam plan to watch, but both sleep"
+  },
+  {
+    "routeId": "0.3",
+    "distance": "88",
+    "event": "Gully more shallow and less sloping"
+  },
+  {
+    "routeId": "0.3",
+    "distance": "92",
+    "event": "Gully bottom less rocky"
+  },
+  {
+    "routeId": "0.3",
+    "distance": "98",
+    "event": "Stream begins to wind. Sky grows cloudy"
+  },
+  {
+    "routeId": "0.3",
+    "distance": "100",
+    "event": "Banks reduced to mossy mounds"
+  },
+  {
+    "routeId": "0.3",
+    "distance": "102",
+    "event": "Stream gurgles over a stone shelf into the bog. Mists rise above the Dead Marshes just ahead and on both sides. See Mountains of Mordor far ahead: wreathed in fog, lit by dawn"
+  },
+  {
+    "routeId": "0.3",
+    "distance": "104",
+    "event": "Gollum's path winds through the mists, turning to find the way between \"pools, and soft mires\". No birds"
+  },
+  {
+    "routeId": "0.3",
+    "distance": "112",
+    "event": "Enter the heart of the Dead Marshes"
+  },
+  {
+    "routeId": "0.3",
+    "distance": "115",
+    "event": "Round the west end of a wide stagnant mere. Air is \"black and heavy to breathe\""
+  },
+  {
+    "routeId": "0.3",
+    "distance": "117",
+    "event": "Wisps of lights begin to appear: \"candles of corpses\". Another wide mere extends west from there"
+  },
+  {
+    "routeId": "0.3",
+    "distance": "118",
+    "event": "Sam falls, sees dead faces in the water (from Battle of the Last Alliance)"
+  },
+  {
+    "routeId": "0.3",
+    "distance": "120",
+    "event": "Reach firmer ground. Gollum trots down \"a long lane between high reeds\" then stops and sniffs"
+  },
+  {
+    "routeId": "0.3",
+    "distance": "121",
+    "event": "Gollum’s uneasiness grows. Hear cry of Nazgûl. Moon peaks through clouds. See Nazgûl"
+  },
+  {
+    "routeId": "0.3",
+    "distance": "125",
+    "event": "Cross area of dry peat, broken by flats of cracked, dry mud. Land slopes slowly east. Ring grows heavier. Sam's mood darkens"
+  },
+  {
+    "routeId": "0.3",
+    "distance": "129",
+    "event": "Climb a long shallow slope"
+  },
+  {
+    "routeId": "0.3",
+    "distance": "134",
+    "event": "Gully curves away north, then west back to the marshes"
+  },
+  {
+    "routeId": "0.3",
+    "distance": "139",
+    "event": "Creep forward as dark falls. Bitter, parched air. Unknown to them, Battle of Helm's Deep rages far to the west"
+  },
+  {
+    "routeId": "0.3",
+    "distance": "154",
+    "event": "Reach the Desolation of the Morannon: gasping pools, mounds of slag. Stop at first slag-heap, but fumes drive them away. Crawl into a \"wide, almost circular pit, high-banked on the west\""
+  },
+  {
+    "routeId": "0.3",
+    "distance": "156",
+    "event": "Nazgûl passes over."
+  },
+  {
+    "routeId": "0.3",
+    "distance": "160",
+    "event": "Midnight. Nazgûl flies over again, but high up (on way to Isengard). Terrified, Gollum refuses to go on until ordered by Frodo"
+  },
+  {
+    "routeId": "0.3",
+    "distance": "166",
+    "event": "See Army of Easterlings arrive, then later, an army of Southrons. Sam recites “Oliphaunt” poem. Gollum tells of 'secret' way. Frodo decides to follow Gollum south"
+  },
+  {
+    "routeId": "0.3",
+    "distance": "168",
+    "event": "Road runs in a trenchlike valley between the mountains and the moors. It is newly repaired for many miles"
+  },
+  {
+    "routeId": "0.3",
+    "distance": "182",
+    "event": "Can still see the red light in one of the Towers of the Teeth"
+  },
+  {
+    "distance": "190",
+    "event": "Reach northern edge of Ithilien. East across road are dark trees. Closer 'a tumbled heathland' with 'knots of pine-trees'"
+  },
+  {
+    "routeId": "0.3",
+    "distance": "191",
+    "event": "Gollum leads them onto the road: straight and level. Go more quickly"
+  },
+  {
+    "routeId": "0.3",
+    "distance": "213",
+    "event": "Climb the west bank and go downhill. Follow a stream to a small clear pool. Bathe. Sam finds orc fire-ring"
+  },
+  {
+    "routeId": "0.3",
+    "distance": "214",
+    "event": "Camp back toward road. Gollum brings coneys. Sam cooks stew. Found by Southern Rangers with Faramir. Gollum hides"
+  },
+  {
+    "routeId": "0.3",
+    "distance": "217",
+    "event": "Noon. Rangers battle the Haradrim. Sam sees an oliphaunt. Sleep to late afternoon. Faramir questions Frodo, then leads them west"
+  },
+  {
+    "routeId": "0.3",
+    "distance": "224",
+    "event": "Frodo and Sam are blindfolded and led down a steep path, then up to Henneth Annûn"
+  },
+  {
+    "routeId": "0.3",
+    "distance": "225",
+    "event": "Faramir removes blindfolds. Advises them to follow upper edge of steep-falling lands to west"
+  },
+  {
+    "routeId": "0.3",
+    "distance": "246",
+    "event": "Nightfall. Sleep beneath an ancient tree. Sam restless"
+  },
+  {
+    "routeId": "0.3",
+    "distance": "262",
+    "event": "Reach area of large trees - more open: ash and oak. Gollum fearful"
+  },
+  {
+    "routeId": "0.3",
+    "distance": "268",
+    "event": "End of the forest. Can see White Mountains to the west and dark peaks of the Ephel Dúath to the east. A vale falls away before them – the Morgul. Perched in an oak, the hobbits cannot sleep"
+  },
+  {
+    "routeId": "0.3",
+    "distance": "272",
+    "event": "Go around a dark pit"
+  },
+  {
+    "routeId": "0.3",
+    "distance": "278",
+    "event": "Climb a great 'hogback' – climb the steep backslope, covered with spiny thickets. Part way down, crawl into a 'hollow hall' formed by a \"tangled knot of thorns\". Gollum wakes them: \"No time to lose\" Leads them down the hillside."
+  },
+  {
+    "routeId": "0.3",
+    "distance": "281",
+    "event": "Turn east and reach the Southward Road. Follow the road into a great ring of trees to the Cross-roads. The setting sun lights the fallen head of the statue of a King of Gondor"
+  },
+  {
+    "routeId": "0.3",
+    "distance": "284",
+    "event": "Road curves east again, next to the ravine of the Morgulduin. Way slants up steeply. Frodo glances across the vale and sees Minas Morgul"
+  },
+  {
+    "routeId": "0.3",
+    "distance": "284.5",
+    "event": "Come to the white bridge. Frodo totters forward as if to cross the bridge, but Sam stops him. Gollum leads them back across the road to a gap in the stone wall – a path along the slopes north of the river"
+  },
+  {
+    "routeId": "0.3",
+    "distance": "285.5",
+    "event": "On a high shelf overlooking the city Frodo stops. The Morgul-host marches forth"
+  },
+  {
+    "routeId": "0.3",
+    "distance": "286",
+    "event": "Continue up path a short way. Reach bottom of the Straight Stair. Stair is cut into the cliff with walls on each side, steps narrow, uneven, and steep as a ladder"
+  },
+  {
+    "routeId": "0.3",
+    "distance": "286.5",
+    "event": "Above the stair, the cutting continues with a winding path - still climbing, but needs no steps: \"seemed to go on for miles\""
+  },
+  {
+    "routeId": "0.3",
+    "distance": "288",
+    "event": "Reach a wide shelf - cliff on left, chasm on right. No longer climbing. Ground is broken"
+  },
+  {
+    "routeId": "0.3",
+    "distance": "289.5",
+    "event": "Reach bottom of the Winding Stair. Stair zig-zigs up the sloping cliff. Even looks down on wraith-road at one point"
+  },
+  {
+    "distance": "290",
+    "event": "Reach the top of the stairs. See red light through window in top of the Tower \"a long way off\". Sleep there between two great piers of rock. All around are \"jagged pinnacles...crevices and fissures\""
+  },
+  {
+    "routeId": "0.3",
+    "distance": "290",
+    "event": "\"Day.\" Sam wakes and sees Gollum pawing at Frodo. Gollum leads them \"up a long ravine between piers and columns of torn and weathered rocks\""
+  },
+  {
+    "routeId": "0.3",
+    "distance": "291",
+    "event": "Opening to Shelob's Lair. Tunnel is so high and wide that Frodo and Sam can't touch hands as they feel their way along each wall. Tunnel climbs slowly"
+  },
+  {
+    "routeId": "0.3",
+    "distance": "292",
+    "event": "Sam feels an opening on the right"
+  },
+  {
+    "routeId": "0.3",
+    "distance": "294",
+    "event": "Frodo feels an opening on the left"
+  },
+  {
+    "routeId": "0.3",
+    "distance": "295",
+    "event": "Frodo and Sam's senses become numb, but feel things hanging down"
+  },
+  {
+    "routeId": "0.3",
+    "distance": "296",
+    "event": "Sam leaves right wall and holds on to Frodo"
+  },
+  {
+    "routeId": "0.3",
+    "distance": "301",
+    "event": "Frodo finds opening to main pit on left"
+  },
+  {
+    "routeId": "0.3",
+    "distance": "302",
+    "event": "Tunnel forks. Left tunnel closed with a door. Realize Gollum is gone. Shelob appears. Use the Phial of Galadriel to drive off Shelob. Tunnel rises steeply to exit. Use Sting to cut webs"
+  },
+  {
+    "routeId": "0.3",
+    "distance": "303",
+    "event": "Frodo runs ahead and is stung by Shelob. Sam fights off Gollum and reaches Frodo and drives off Shelob, but is too late. Thinking Frodo dead, Sam reluctantly takes the Ring and continues on"
+  },
+  {
+    "routeId": "0.3",
+    "distance": "303.5",
+    "event": "Sam reaches base of a flight of shallow steps to the cleft"
+  },
+  {
+    "routeId": "0.3",
+    "distance": "304",
+    "event": "From the cleft of the Pass, Sam looks back. Hearing orcs, he puts on the Ring. When orcs reach Frodo, Sam rushes back"
+  },
+  {
+    "routeId": "0.3",
+    "distance": "304",
+    "event": "Frodo and Sam reach gate of the Tower. Watchers send up signal of their escape. Run. Road curves out of sight from the gate"
+  },
+  {
+    "routeId": "0.3",
+    "distance": "305",
+    "event": "Road curves down sharply to meet the Morgul-road. At the bridge just beyond the road meeting, they jump. Land just a few feet below in a thorn thicket."
+  },
+  {
+    "routeId": "0.3",
+    "distance": "306",
+    "event": "Climb down to bottom of north-running valley"
+  },
+  {
+    "routeId": "0.3",
+    "distance": "307",
+    "event": "Halt briefly. Sam falls asleep. Turn north in the ravine. Frodo discards chain mail. Sam wishes for light and water"
+  },
+  {
+    "routeId": "0.3",
+    "distance": "308",
+    "event": "Frodo senses Black Rider. Halt again. Sky brightens. See flight of fallen Witch King - ill news for Barad-dûr"
+  },
+  {
+    "routeId": "0.3",
+    "distance": "312",
+    "event": "Hear water trickling from gully on left"
+  },
+  {
+    "routeId": "0.3",
+    "distance": "318",
+    "event": "Road broadens and a rough wall begins: nearing an orc hold. Cross river-bed (a few pools in the bottom)"
+  },
+  {
+    "routeId": "0.3",
+    "distance": "321",
+    "event": "Ridge stands 1500 feet above the plain. Plain is crawling with enemies. See Mount Doom 40 miles away"
+  },
+  {
+    "routeId": "0.3",
+    "distance": "323",
+    "event": "Try to go north along ridge, but cannot. Retrace path back to valley floor"
+  },
+  {
+    "routeId": "0.3",
+    "distance": "324",
+    "event": "See orc hold by path on west"
+  },
+  {
+    "routeId": "0.3",
+    "distance": "326",
+    "event": "Hear orc scouts. Hide behind bush. Learn news of Gollum. Light fades as they hide"
+  },
+  {
+    "routeId": "0.3",
+    "distance": "342",
+    "event": "Stagnant pool of water. Do not see it in the dark"
+  },
+  {
+    "routeId": "0.3",
+    "distance": "346",
+    "event": "Eat. Finish Faramir's food. When quite dark, begin again"
+  },
+  {
+    "routeId": "0.3",
+    "distance": "371",
+    "event": "At first light, hide in a hollow under an overhanging stone. Strong wind from west. Ahead the valley has climbed nearly to top of the inner ridge. Water course ends in broken steps of rock. Can see road from old castle of Durthang. Frodo sleeps. Sam finds water. Returns and sees Gollum"
+  },
+  {
+    "routeId": "0.3",
+    "distance": "372",
+    "event": "Light fading when wake. See watch fires on heights. Return to spring. Fill water bottle"
+  },
+  {
+    "routeId": "0.3",
+    "distance": "380",
+    "event": "A side path runs south into Gorgoroth toward main road. Sheer drop from road becomes increasingly deep"
+  },
+  {
+    "routeId": "0.3",
+    "distance": "383",
+    "event": "Road bends a little north and hides view from west. Rest. Orc company sees them, assumes they are deserters. Frodo and Sam are forced to join march"
+  },
+  {
+    "routeId": "0.3",
+    "distance": "387",
+    "event": "Road runs down a long slope into the plain. Frodo starts to stumble"
+  },
+  {
+    "routeId": "0.3",
+    "distance": "389",
+    "event": "Out on the plain, drawing near Isenmouthe: Road-meeting"
+  },
+  {
+    "routeId": "0.3",
+    "distance": "391",
+    "event": "In confusion of several companies meeting, Sam pulls Frodo with him, crawling across the road and over the curb. Crawl 20 yards to a shallow pit and sleep"
+  },
+  {
+    "routeId": "0.3",
+    "distance": "392",
+    "event": "Morning. Sam sees Gorgoroth is pitted with great holes. Roads are empty. Crawl from hollow to hollow slanting toward the foothills to north"
+  },
+  {
+    "routeId": "0.3",
+    "distance": "398",
+    "event": "Walk east along the road as it skirts the Ash Mountains. See no one"
+  },
+  {
+    "routeId": "0.3",
+    "distance": "416",
+    "event": "More and more Frodo is bowed down by the Ring"
+  },
+  {
+    "routeId": "0.3",
+    "distance": "424",
+    "event": "Find cistern with muddied water in bottom. Drink and fill bottle. Eat"
+  },
+  {
+    "routeId": "0.3",
+    "distance": "431",
+    "event": "Camp just off road. Hear horse-messenger gallop by during night. Frodo ceases to speak. Stumbles as he fights Ring"
+  },
+  {
+    "routeId": "0.3",
+    "distance": "438",
+    "event": "Stop to eat. Mount Doom is due south. Leave road and turn toward it"
+  },
+  {
+    "routeId": "0.3",
+    "distance": "446",
+    "event": "The Dreadful Nightfall. Only half bottle of water left. Frodo sleeps fitfully, and Sam, very little. He sees gleam of Gollum's eyes"
+  },
+  {
+    "routeId": "0.3",
+    "distance": "456",
+    "event": "Extra effort squanders Frodo's last strength. Sam cannot sleep. Argues with self. Ground trembles"
+  },
+  {
+    "routeId": "0.3",
+    "distance": "466",
+    "event": "Continue to foot of Mount Doom. Sam tries to warm Frodo as he sleeps. As attempt to start, Frodo falls and begins to crawl. Sam carries him"
+  },
+  {
+    "routeId": "0.3",
+    "distance": "467",
+    "event": "Stop more than half way up base of the mountain. Rest"
+  },
+  {
+    "routeId": "0.3",
+    "distance": "468",
+    "event": "Sam and Frodo both crawl up slope to Sauron's Road. Frodo turns east and see the Eye: falls. Sam carries him again"
+  },
+  {
+    "routeId": "0.3",
+    "distance": "469",
+    "event": "Gollum attacks! Sam fights Gollum. Frodo goes ahead"
+  },
+  {
+    "routeId": "0.3",
+    "distance": "469.5",
+    "event": "Frodo enters the Door to the Sammath Naur"
+  },
+  {
+    "routeId": "0.3",
+    "distance": "470",
+    "event": "Frodo claims the Ring just as Sam finds him. Gollum attacks again, bites Ring from Frodo’s finger and falls into lava. Ring Destroyed. Barad-dûr and Morannon collapse"
+  }
+]

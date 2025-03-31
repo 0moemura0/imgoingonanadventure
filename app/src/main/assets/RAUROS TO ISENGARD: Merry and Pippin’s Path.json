@@ -1,0 +1,321 @@
+{
+  "routeId": "6.2",
+  "list": [
+    {
+      "distance": "0",
+      "event": "Breaking of the Fellowship. Pippin and Merry run from Parth Galen searching for Frodo (shortly before noon)."
+    },
+    {
+      "distance": "1",
+      "event": "Boromir mortally wounded. Pippin and Merry captured by orcs (ca. 2 p.m.). "
+    },
+    {
+      "distance": "6",
+      "event": "Orcs carry hobbits. Pass along many gullies and ravines which dissect the backslope of the eastern ridge of the Emyn Muil."
+    },
+    {
+      "distance": "10",
+      "event": "Descend the steep western cliff face."
+    },
+    {
+      "distance": "12",
+      "event": "Reach a stony trough between ridged hills. They turn north alongside the trickling stream runs through the trough. "
+    },
+    {
+      "distance": "14",
+      "event": "Dusk. Pippin wakes, bound with ropes. Merry unconscious. Skirmish between Orcs of Mordor and Isengard. Pippin manages to cut the ropes on his wrists, then reties them."
+    },
+    {
+      "distance": "16",
+      "event": "Orcs climb the western ridge where stream comes out of a ravine."
+    },
+    {
+      "distance": "20",
+      "event": "Head of the stream. They continue up the ravine."
+    },
+    {
+      "distance": "23",
+      "event": "Reach crest of western ridge."
+    },
+    {
+      "distance": "24",
+      "event": "Go north along ridge."
+    },
+    {
+      "distance": "25",
+      "event": "Reach a narrow ravine with a noisy stream running through it. Climb down the cliff &#8216;20 fathoms&#8217; (120 feet) to a &#8216;wide and rugged shelf.&#8217;"
+    },
+    {
+      "distance": "27",
+      "event": "Early night. Reach the East Wall of Rohan &#8211; the sheer cliff which drops to the grassy plains on a path like a stony stair. Pippin awakes when he is thrown down. Scout reports seeing a Horseman. Ugl&#250;k smears ointment on Merry&#8217;s forehead and forces down an orc-draught to wake him. Both hobbits&#8217; leg bindings are cut and they are forced to run."
+    },
+    {
+      "distance": "27",
+      "event": "They descend the sheer cliff of the shelf on a path like a stony stair."
+    },
+    {
+      "distance": "28",
+      "event": "In the grasslands orcs run with long, loping strides."
+    },
+    {
+      "distance": "30",
+      "event": "When they reach a muddy depression, Pippin swerves away from the main trail. As he is recaptured, he drops his elven brooch."
+    },
+    {
+      "distance": "35",
+      "event": "Merry and Pippin are carried again. They slip into dark dreams."
+    },
+    {
+      "distance": "59",
+      "event": "Far behind, the company is visible to Legolas."
+    },
+    {
+      "distance": "90",
+      "event": "Ground begins to rise toward the downs to the north."
+    },
+    {
+      "distance": "94",
+      "event": "Turn more to the north, parallel to the river Entwash. Dryer ground."
+    },
+    {
+      "distance": "111",
+      "event": "Reach the first slopes of the Downs. Many orcs demand a halt. Pippin and Merry are flung to the ground and sleep (ca.11 p.m)."
+    },
+    {
+      "distance": "111",
+      "event": "Soon the hobbits are carried again, tossed and shaken."
+    },
+    {
+      "distance": "120",
+      "event": "North face of southern down ridge."
+    },
+    {
+      "distance": "127",
+      "event": "Rising crest of second down ridge."
+    },
+    {
+      "distance": "135",
+      "event": "Reach the most northerly hill of the Downs. Turn more toward the river."
+    },
+    {
+      "distance": "140",
+      "event": "Morning. Orcs stop near the Entwash. Mountains and forest can be seen ahead. Pippin is thrown on the grass. Merry is not far away. Eat. Riders of Rohan are seen to the south. Over 100 northern orcs flee north. Grisn&#225;kh returns from the east with 40 Orcs of Mordor. Isengarders carry the hobbits, changing off carriers."
+    },
+    {
+      "distance": "145",
+      "event": "Isengarders gradually pass through Orcs of Mordor. Hills of the Wold rise on the east."
+    },
+    {
+      "distance": "150",
+      "event": "Isengarders overtake Northerners. Riders are sighted, still far, but gaining. Isengarders redouble pace."
+    },
+    {
+      "distance": "160",
+      "event": "Land begins to slope upward. They are already passing a few trees. Pippin fears the Orcs will beat the Riders to the forest."
+    },
+    {
+      "distance": "163",
+      "event": "Rohirrim start to hem them in and are shooting stragglers."
+    },
+    {
+      "distance": "165",
+      "event": "Just short of the edge of Fangorn, the last 200 Orcs are encircled by the Rohirrim. Camp on a knoll. Night falls and clouds occasionally cover the moon."
+    },
+    {
+      "distance": "165",
+      "event": "Grishn&#225;kh of Mordor secretly carries the hobbits away from camp."
+    },
+    {
+      "distance": "165.5",
+      "event": "Rider kills Grishn&#225;kh. Hobbits cut their bonds, then eat lembas."
+    },
+    {
+      "distance": "166",
+      "event": "Hobbits crawl to the river, but banks are too steep to drink. They hear noise from the camp as the Riders fight off the orc reinforcements."
+    },
+    {
+      "distance": "166.5",
+      "event": "Sky is beginning to pale as the walk along the river to the edge of the forest. DAWN. Riders attack orcs. Hobbits watch a while, then follow the stream into Fangorn Forest as closely as the tangled woods allow."
+    },
+    {
+      "distance": "168",
+      "event": "Stop for a drink, bathe their feet and talk. Dim and stuffy. See sun shining through some way ahead."
+    },
+    {
+      "distance": "169",
+      "event": "Further than they thought. Ground rises steeply and is more stony."
+    },
+    {
+      "distance": "169.5",
+      "event": "Reach a &#8216;rock-wall&#8217; at the foot of a barren hill. Climb rough stair to the top of the hill."
+    },
+    {
+      "distance": "170",
+      "event": "Treebeard&#8217;s Hill &#8211; Meet Treebeard."
+    },
+    {
+      "distance": "170.5",
+      "event": "Treebeard carries them down the hill, then turns west. They go deeper into the woods, but are never far from the stream."
+    },
+    {
+      "distance": "180",
+      "event": "Pippin asks why Celeborn warned them against Fangorn."
+    },
+    {
+      "distance": "190",
+      "event": "Treebeard chants of the woods of Beleriand."
+    },
+    {
+      "distance": "196",
+      "event": "Crest of a rise."
+    },
+    {
+      "distance": "202",
+      "event": "Valley."
+    },
+    {
+      "distance": "210",
+      "event": "Hillcrest."
+    },
+    {
+      "distance": "216",
+      "event": "Valley."
+    },
+    {
+      "distance": "222",
+      "event": "Small rise."
+    },
+    {
+      "distance": "228",
+      "event": "Ascend a ridge."
+    },
+    {
+      "distance": "234",
+      "event": "Rise even higher."
+    },
+    {
+      "distance": "240",
+      "event": "Hillcrest."
+    },
+    {
+      "distance": "242",
+      "event": "Depression."
+    },
+    {
+      "distance": "248",
+      "event": "Foothill."
+    },
+    {
+      "distance": "256",
+      "event": "A higher crest."
+    },
+    {
+      "distance": "260",
+      "event": "Dusk. Reach the foot of the mountains. Treebeard climbs the slope."
+    },
+    {
+      "distance": "264",
+      "event": "Slope climbs higher."
+    },
+    {
+      "distance": "266",
+      "event": "Continue to climb."
+    },
+    {
+      "distance": "270",
+      "event": "They reach Wellinghall, Treebeard&#8217;s home &#8211; a bay hidden behind a showering fall channeled from the spring of the Entwash. They have gone 70,000 Ent-strides."
+    },
+    {
+      "distance": "270",
+      "event": "While the hobbits sleep, Treebeard walks far summoning other Ents. Leave Wellinghall about 9 a.m. Treebeard carries them again."
+    },
+    {
+      "distance": "271",
+      "event": "Turn right, cross the young stream, and cross tumbled slopes with few trees. Birch, rowan and pines can be seen higher up."
+    },
+    {
+      "distance": "274",
+      "event": "Pippin loses count of Ent-strides at about 3000."
+    },
+    {
+      "distance": "280",
+      "event": "As he walks Treebeard chants. There are occasional responses."
+    },
+    {
+      "distance": "286",
+      "event": "They descend a last slope into deep woods with huge trees."
+    },
+    {
+      "distance": "288",
+      "event": "Treebeard sends out a summoning &#8216;Hoom.&#8217; Others respond."
+    },
+    {
+      "distance": "290",
+      "event": "Treebeard sends out a summoning &#8216;Hoom.&#8217; Others respond."
+    },
+    {
+      "distance": "292",
+      "event": "Treebeard sends out a summoning &#8216;Hoom.&#8217; Others respond."
+    },
+    {
+      "distance": "295",
+      "event": "They pass through a dense evergreen hedge into a bowl with 3 birches: Derndingle. Entmoot begins. Hobbits wander."
+    },
+    {
+      "distance": "295",
+      "event": "Dawn: bleak and windy. Voices clamour, then Forest grows silent. Ent voices explode and the march begins. Quickbeam carries the hobbits to join the others (ca.4 p.m.). Treebeard takes hobbits to carry. "
+    },
+    {
+      "distance": "296",
+      "event": "Treebeard sings with the others."
+    },
+    {
+      "distance": "298",
+      "event": "Treebeard speaks again to hobbits."
+    },
+    {
+      "distance": "302",
+      "event": "Enter a long fold of land toward the south."
+    },
+    {
+      "distance": "310",
+      "event": "Stop for evening drink."
+    },
+    {
+      "distance": "315",
+      "event": "Climb up the western ridge. Woods change to scattered birch, then pines."
+    },
+    {
+      "distance": "320",
+      "event": "Sun falls behind the ridge ahead. Behind them the Huorns gather and follow."
+    },
+    {
+      "distance": "324",
+      "event": "Near the crest of the ridge, singing stops. Night falls."
+    },
+    {
+      "distance": "326",
+      "event": "Summit of hill &#8211; see Isengard below."
+    },
+    {
+      "distance": "330",
+      "event": "Creep down a long ravine"
+    },
+    {
+      "distance": "340",
+      "event": "Enter the upper end of the Wizard&#8217;s Vale. Dark &amp; cloudy."
+    },
+    {
+      "distance": "346",
+      "event": "Cross the upper waters of the Isen."
+    },
+    {
+      "distance": "350",
+      "event": "Hourns gather along the north side of Isengard."
+    },
+    {
+      "distance": "355",
+      "event": "Reach Isengard &#8211; Treebeard, hobbits and a few other ents hide near the gate of Isengard. Shortly after midnight, Saruman&#8217;s army marches forth: at least 10,000. Took over an hour. Many Huorns follow. Ents attack walls of Isengard. Quickbeam almost catches Saruman. After burning of one ent, Treebeard halts the attack."
+    }
+  ]
+}

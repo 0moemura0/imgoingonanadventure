@@ -14,7 +14,7 @@
         android:layout_height="match_parent"
         android:importantForAccessibility="no"
         android:scaleType="centerCrop"
-        android:src="@drawable/gradient_background"
+        android:src="@drawable/bag_end_to_rivendell"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -39,7 +39,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.85" />
+        app:layout_constraintGuide_percent="0.8" />
 
     <ImageView
         android:id="@+id/viewGrass"
@@ -64,7 +64,8 @@
         android:id="@+id/top_line"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:scaleType="centerCrop"
+        android:alpha="0.6"
+        android:scaleType="fitXY"
         android:src="@drawable/top_line"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -74,7 +75,8 @@
         android:id="@+id/bottom_line"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:scaleType="centerCrop"
+        android:alpha="0.6"
+        android:scaleType="fitXY"
         android:src="@drawable/bottom_line"
         app:layout_constraintBottom_toTopOf="@id/guideline_character"
         app:layout_constraintEnd_toEndOf="parent"
@@ -90,6 +92,26 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <TextView
+        android:id="@+id/notes_text"
+        style="@style/TextAppearance.ImGoingOnAnAdventure.Medium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="notes"
+        app:layout_constraintEnd_toEndOf="@id/viewToNotes"
+        app:layout_constraintStart_toStartOf="@id/viewToNotes"
+        app:layout_constraintTop_toBottomOf="@id/viewToNotes" />
+
+    <TextView
+        android:id="@+id/tracker_text"
+        style="@style/TextAppearance.ImGoingOnAnAdventure.Medium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="tracker"
+        app:layout_constraintEnd_toEndOf="@id/viewToTracker"
+        app:layout_constraintStart_toStartOf="@id/viewToTracker"
+        app:layout_constraintTop_toBottomOf="@id/viewToTracker" />
+
     <View
         android:id="@+id/viewToNotes"
         android:layout_width="60dp"
@@ -98,7 +120,8 @@
         android:layout_marginEnd="20dp"
         android:background="@drawable/note"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/guideline_grass" />
 
     <View
         android:id="@+id/viewToTracker"
@@ -107,15 +130,21 @@
         android:layout_margin="20dp"
         android:background="@drawable/hike"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/guideline_grass" />
 
     <TextView
         android:id="@+id/trackerTitle"
         style="@style/TextAppearance.ImGoingOnAnAdventure.Body"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/lateef_semibold"
         android:gravity="center"
         android:padding="10dp"
+        android:shadowColor="@color/white"
+        android:shadowDx="0.0"
+        android:shadowDy="0.0"
+        android:shadowRadius="10.0"
         android:textSize="36sp"
         app:layout_constraintBottom_toBottomOf="@id/top_line"
         app:layout_constraintEnd_toEndOf="parent"
@@ -124,11 +153,18 @@
 
     <TextView
         android:id="@+id/trackerSubtitle"
-        style="@style/TextAppearance.ImGoingOnAnAdventure.Body"
+        style="@style/TextAppearance.ImGoingOnAnAdventure.Medium"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
         android:gravity="center"
+        android:lineBreakStyle="strict"
         android:padding="10dp"
+        android:shadowColor="@color/white"
+        android:shadowDx="0.0"
+        android:shadowDy="0.0"
+        android:shadowRadius="10.0"
+        android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@id/bottom_line"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

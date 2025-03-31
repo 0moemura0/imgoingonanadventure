@@ -1,0 +1,287 @@
+[
+  {
+    "routeId": "0.1",
+    "distance": "0",
+    "event": "Leave Rivendell at dusk on Dec. 25"
+  },
+  {
+    "routeId": "0.1",
+    "distance": "8",
+    "event": "At the Ford of Brúinen, turn south on ‘narrow paths among folded lands"
+  },
+  {
+    "routeId": "0.1",
+    "distance": "18",
+    "event": "To the west the Bruinen cuts a steep-sided canyon"
+  },
+  {
+    "routeId": "0.1",
+    "distance": "26",
+    "event": "Cross a small stream"
+  },
+  {
+    "routeId": "0.1",
+    "distance": "37",
+    "event": "Camp in a hollow during the day"
+  },
+  {
+    "routeId": "0.1",
+    "distance": "46",
+    "event": "Crest the top of a hill. Snowcapped peak lies due east"
+  },
+  {
+    "routeId": "0.1",
+    "distance": "52",
+    "event": "Cold and windy. Camp during the day"
+  },
+  {
+    "routeId": "0.1",
+    "distance": "58",
+    "event": "Reach a small stream. Follow it west"
+  },
+  {
+    "routeId": "0.1",
+    "distance": "60",
+    "event": "Leave streambed"
+  },
+  {
+    "routeId": "0.1",
+    "distance": "67",
+    "event": "Paths few and winding. Camp during the day"
+  },
+  {
+    "routeId": "0.1",
+    "distance": "86",
+    "event": "Reach crest of another low mountain spur. Turn southwest as they descend"
+  },
+  {
+    "routeId": "0.1",
+    "distance": "97",
+    "event": "Camp during the day"
+  },
+  {
+    "routeId": "0.1",
+    "distance": "120",
+    "event": "Another snowcapped peak lies to the east"
+  },
+  {
+    "routeId": "0.1",
+    "distance": "130",
+    "event": "Cross a small stream. It flows west into a swampy area"
+  },
+  {
+    "routeId": "0.1",
+    "distance": "180",
+    "event": "Rolling lands"
+  },
+  {
+    "routeId": "0.1",
+    "distance": "210",
+    "event": "Land drops more steeply. Go southeast into a valley"
+  },
+  {
+    "routeId": "0.1",
+    "distance": "220",
+    "event": "Weather warmer and sunny. Can see Mts. of Moria in distance. Eerily quiet"
+  },
+  {
+    "routeId": "0.1",
+    "distance": "228",
+    "event": "Begin climb up north side of Hollin Ridge"
+  },
+  {
+    "routeId": "0.1",
+    "distance": "232",
+    "event": "Reach Hollin Ridge. Large holly trees mark ridge. Day camp on Hollin Ridge. They plan to stay overnight, but after the crebain fly over, they leave at dusk"
+  },
+  {
+    "routeId": "0.1",
+    "distance": "233",
+    "event": "Soon strike a good path that goes southeast toward the mountain pass. Path is lined with stones. Full moon"
+  },
+  {
+    "routeId": "0.1",
+    "distance": "248",
+    "event": "Frodo and Gandalf sense something flying over just before dawn"
+  },
+  {
+    "routeId": "0.1",
+    "distance": "252",
+    "event": "Road begins climbing as it winds into the hills. Mountains are closer"
+  },
+  {
+    "routeId": "0.1",
+    "distance": "275",
+    "event": "Road climbs still higher"
+  },
+  {
+    "routeId": "0.1",
+    "distance": "284",
+    "event": "Almost to the feet of the Redhorn. Camp during day of Jan. 11. Gandalf and Aragorn debate path. Wind turns NW. Black clouds form during afternoon"
+  },
+  {
+    "routeId": "0.1",
+    "distance": "286",
+    "event": "Path is fairly smooth. They make good time"
+  },
+  {
+    "routeId": "0.1",
+    "distance": "288",
+    "event": "Path becomes more steep and is dotted with fallen stones"
+  },
+  {
+    "routeId": "0.1",
+    "distance": "290",
+    "event": "Path climbs a sharp slope: cliff on left, drop-off on right. Begins to snow as reach a ‘shelf’ at the top of the slope"
+  },
+  {
+    "routeId": "0.1",
+    "distance": "291",
+    "event": "Snow begins to fall more thickly"
+  },
+  {
+    "routeId": "0.1",
+    "distance": "292",
+    "event": "Redhorn Pass. Snow becomes even heavier. Wind howls. Decide they can go no further. All huddle against the south-facing cliff, some behind Bill the Pony. Build fire. Stay until dawn"
+  },
+  {
+    "routeId": "0.1",
+    "distance": "292",
+    "event": "Aragorn and Boromir start down, plowing through the snow"
+  },
+  {
+    "routeId": "0.1",
+    "distance": "292.5",
+    "event": "Fellowship reaches great drift of snow. Clouds begin to break"
+  },
+  {
+    "routeId": "0.1",
+    "distance": "293",
+    "event": "Snow steadily more shallow"
+  },
+  {
+    "routeId": "0.1",
+    "distance": "296",
+    "event": "Turn west, away from path they took up to the Pass. Crebain return"
+  },
+  {
+    "routeId": "0.1",
+    "distance": "310",
+    "event": "Turn more southwest around foothills of the Silvertine"
+  },
+  {
+    "routeId": "0.1",
+    "distance": "320",
+    "event": "Stop to eat, camp, and debate. Cold wind. Hear Wargs! Climb to top of the hill above them. Enter a ring of stones with gnarled trees within. Wargs gather. Attack just before dawn"
+  },
+  {
+    "routeId": "0.1",
+    "distance": "330",
+    "event": "Reach the Sirannon"
+  },
+  {
+    "routeId": "0.1",
+    "distance": "334",
+    "event": "Stop to EAT quickly!"
+  },
+  {
+    "routeId": "0.1",
+    "distance": "338",
+    "event": "Fall of the Sirannon: Frodo, Gimli and Gandalf climb stairs to upland valley"
+  },
+  {
+    "routeId": "0.1",
+    "distance": "339",
+    "event": "Climb curving road to upland valley. Most is filled with a lake"
+  },
+  {
+    "routeId": "0.1",
+    "distance": "340",
+    "event": "Reach the Doors of Moria. Release Bill. Spend half of hour at Gate seeking the password. ATTACK by the Watcher in the Water."
+  },
+  {
+    "routeId": "0.1",
+    "distance": "343",
+    "event": "Frodo begins to hear Gollum’s pattering footsteps"
+  },
+  {
+    "routeId": "0.1",
+    "distance": "350",
+    "event": "Have to jump narrow fissure"
+  },
+  {
+    "routeId": "0.1",
+    "distance": "353",
+    "event": "Have to jump 7 foot fissure; brief halt"
+  },
+  {
+    "routeId": "0.1",
+    "distance": "360",
+    "event": "Reach junction of 3 passages, with Guardroom"
+  },
+  {
+    "routeId": "0.1",
+    "distance": "365",
+    "event": "Leave Guardroom. Road climbs in great mounting curves with no side passages"
+  },
+  {
+    "routeId": "0.1",
+    "distance": "380",
+    "event": "Reach the 21st Hall of the North End. Enter Chamber of Records nearby. Find Balin’s Tomb. ATTACK - orcs and cave troll. Escape through east door of room"
+  },
+  {
+    "routeId": "0.1",
+    "distance": "382",
+    "event": "Reach the 1st Deep. Fire blocks them from Orcs. Cross Bridge over Durin’s Deep. Balrog attacks. Gandalf and Balrog fall"
+  },
+  {
+    "routeId": "0.1",
+    "distance": "383",
+    "event": "Durin’s Stone and Mirrormere"
+  },
+  {
+    "routeId": "0.1",
+    "distance": "384",
+    "event": "Pause at the spring of the Silverlode"
+  },
+  {
+    "routeId": "0.1",
+    "distance": "390",
+    "event": "Frodo and Sam lag behind. Aragorn and Boromir carry them to a dell nearby"
+  },
+  {
+    "routeId": "0.1",
+    "distance": "396",
+    "event": "Frodo begins to hear Gollum again, and sees glowing eyes"
+  },
+  {
+    "routeId": "0.1",
+    "distance": "397",
+    "event": "Enter woods of Lothlórien"
+  },
+  {
+    "routeId": "0.1",
+    "distance": "398",
+    "event": "Cross the Nimrodel. Go west upstream a short distance. Meet elves. Sleep onflets in the trees. Orc company passes during the night. Gollum appears briefly"
+  },
+  {
+    "routeId": "0.1",
+    "distance": "403",
+    "event": "Cross the Silverlode on ropes. Fellowship is blindfolded"
+  },
+  {
+    "routeId": "0.1",
+    "distance": "448",
+    "event": "Noon - In a clearing, meet an elf-company. Blindfolds are removed. Climb to the top of the hill of Cerin Amroth"
+  },
+  {
+    "routeId": "0.1",
+    "distance": "458",
+    "event": "Reach the north side of Caras Galadan"
+  },
+  {
+    "routeId": "0.1",
+    "distance": "462",
+    "event": "RReach Gates of Caras Galadan (south side) and climb to meet Celeborn and Galadriel. Stay in Lothlórien until February 16"
+  }
+]

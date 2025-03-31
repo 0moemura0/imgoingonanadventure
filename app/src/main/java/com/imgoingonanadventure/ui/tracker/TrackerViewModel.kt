@@ -1,6 +1,7 @@
 package com.imgoingonanadventure.ui.tracker
 
 import android.util.Log
+import androidx.annotation.DrawableRes
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.imgoingonanadventure.data.TrackerRepository
@@ -31,8 +32,8 @@ class TrackerViewModel(private val trackerRepository: TrackerRepository) : ViewM
     val stateEvent: StateFlow<String>
         get() = _stateEvent.asStateFlow()
 
-    private val _stateImage: MutableStateFlow<Int> = MutableStateFlow(0)
-    val stateImage: StateFlow<Int>
+    private val _stateImage: MutableStateFlow<ImageState> = MutableStateFlow(ImageState())
+    val stateImage: StateFlow<ImageState>
         get() = _stateImage.asStateFlow()
 
     fun getStepState() {
@@ -72,18 +73,33 @@ class TrackerViewModel(private val trackerRepository: TrackerRepository) : ViewM
 
         viewModelScope.launch {
             trackerRepository.getRouteName()
-                .map { getRouteImage(it) }
+                .map { getRouteSetting(it) }
                 .catch { Log.e(TAG, "updateStateWith: image", it) }
-                .collect { newImage -> _stateImage.update { newImage } }
+                .collect { newSetting -> _stateImage.update { newSetting } }
         }
     }
 
-    private fun getRouteImage(route: Route): Int {
+    private fun getRouteSetting(route: Route): ImageState {
         return when (route) {
-            Route.BAG_END_TO_RIVENDELL -> R.drawable.bag_end_to_rivendell
-            Route.RIVENDELL_TO_LOTHLORIEN -> R.drawable.rivendell_to_lothlorien
-            Route.LOTHLORIEN_TO_RAUROS -> R.drawable.lothlorien_to_rauros
-            Route.RAUROS_TO_DOOM -> R.drawable.rauros_to_doom
+            Route.BAG_END_TO_RIVENDELL -> ImageState(
+                R.drawable.bag_end_to_rivendell,
+                R.drawable.grass_bag
+            )
+
+            Route.RIVENDELL_TO_LOTHLORIEN -> ImageState(
+                R.drawable.rivendell_to_lothlorien,
+                R.drawable.grass_rivendell,
+            )
+
+            Route.LOTHLORIEN_TO_RAUROS -> ImageState(
+                R.drawable.lothlorien_to_rauros,
+                R.drawable.grass_lothlorie,
+            )
+
+            Route.RAUROS_TO_DOOM -> ImageState(
+                R.drawable.rauros_to_doom,
+                R.drawable.grass_rauros,
+            )
         }
     }
 
@@ -91,3 +107,8 @@ class TrackerViewModel(private val trackerRepository: TrackerRepository) : ViewM
         const val TAG = "TrackerViewModel"
     }
 }
+
+class ImageState(
+    @DrawableRes val imageId: Int = R.drawable.bag_end_to_rivendell,
+    @DrawableRes val grassId: Int = R.drawable.grass
+)

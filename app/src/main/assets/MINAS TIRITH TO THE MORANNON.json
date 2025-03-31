@@ -1,0 +1,161 @@
+{
+  "routeId": "4.2",
+  "list": [
+    {
+      "distance": "0",
+      "event": "Host assembles before Gates of Minas Tirith. Go ENE through the Pelennor"
+    },
+    {
+      "distance": "11",
+      "event": "Pass between Causeway Forts on the Rammas Echor. Follow Causeway east across the flatlands of the Anduin valley"
+    },
+    {
+      "distance": "12",
+      "event": "Reach the western walls of Osgiliath. Pass through &#8220;ruins of Old Gondor.&#8221;"
+    },
+    {
+      "distance": "13",
+      "event": "Use ferries and boat-bridges of the enemy to cross the Anduin"
+    },
+    {
+      "distance": "14",
+      "event": "Continue through ruins of east Osgiliath. Pass new defense works"
+    },
+    {
+      "distance": "18",
+      "event": "Infantry halts 5 miles east of the Anduin. Camps by the River Morgul"
+    },
+    {
+      "distance": "25",
+      "event": "Horsemen continue up the Morgul-road east. It is straight, but climbing"
+    },
+    {
+      "distance": "33",
+      "event": "Reach the Cross-roads by evening. Heralds proclaim the coming of the Lords of Gondor. No other sounds. Repair statue of the King. Camp"
+    },
+    {
+      "distance": "33",
+      "event": "Leave a strong guard at Cross-roads: archers of Ithilien. Rest of Host moves north on the road. Send scouts ahead and on each side"
+    },
+    {
+      "distance": "38",
+      "event": "&nbsp;Heralds proclaim the coming of the Lords of Gondor. Prince Imrahil suggests they say &#8220;King Elessar.&#8221; Weather fair, with west wind"
+    },
+    {
+      "distance": "41",
+      "event": "Dark thickets rise from the tumbled land below the Ephel D&#250;ath"
+    },
+    {
+      "distance": "44",
+      "event": "Cross stream on a masonry bridge. Heralds proclaim the coming of King Elessar. Rest"
+    },
+    {
+      "distance": "51",
+      "event": "Cross stream on bridge. Rest"
+    },
+    {
+      "distance": "58",
+      "event": "&nbsp;Heralds proclaim the coming of King Elessar. Camp by stream"
+    },
+    {
+      "distance": "58",
+      "event": "Cross stream on bridge. Continue north on road"
+    },
+    {
+      "distance": "64",
+      "event": "Heralds proclaim the coming of King Elessar. Cross stream on bridge"
+    },
+    {
+      "distance": "68",
+      "event": "Heralds proclaim the coming of King Elessar. Weather still fair"
+    },
+    {
+      "distance": "72",
+      "event": "Reach south end of long cut through out-thrust arm of the mountains"
+    },
+    {
+      "distance": "74",
+      "event": "Heralds proclaim the coming of King Elessar. "
+    },
+    {
+      "distance": "78",
+      "event": "Host is attacked by Orcs and Easterlings (same place as Faramir had defeated the Haradrim). Well warned by scouts, they easily defeat the attack. Camp there by stream. Nazg&#251;l overfly camp"
+    },
+    {
+      "distance": "78",
+      "event": "Cross stream on bridge. Nazg&#251;l continue to overfly"
+    },
+    {
+      "distance": "82",
+      "event": "Heralds proclaim the coming of King Elessar. Cross stream on bridge"
+    },
+    {
+      "distance": "89",
+      "event": "Heralds proclaim the coming of King Elessar. "
+    },
+    {
+      "distance": "91",
+      "event": "Cross stream on bridge"
+    },
+    {
+      "distance": "94",
+      "event": "Heralds proclaim the coming of King Elessar. "
+    },
+    {
+      "distance": "100",
+      "event": "Reach the point where the road turns northeast toward the Black Gate. Camp west of road, next to a stream"
+    },
+    {
+      "distance": "100",
+      "event": "Swing northwest away from the road"
+    },
+    {
+      "distance": "102",
+      "event": "Follow a dry stream-bed leading toward the Wetwang"
+    },
+    {
+      "distance": "104",
+      "event": "Turn northeast, roughly paralleling the road"
+    },
+    {
+      "distance": "106",
+      "event": "Rest. Reach the desert-like lands west of Mordor. See the beginnings of theDesolation of the Morannon. Aragorn dismisses the faint-hearted"
+    },
+    {
+      "distance": "109",
+      "event": "Eat. Continue on, slowly"
+    },
+    {
+      "distance": "118",
+      "event": "Camp"
+    },
+    {
+      "distance": "118",
+      "event": "Continue northeast"
+    },
+    {
+      "distance": "122",
+      "event": "Pass among the moors of the Noman-lands. Draw together. No scouts"
+    },
+    {
+      "distance": "126",
+      "event": "Eat. Rest. Continue on very slowly. Expect attack, but none comes"
+    },
+    {
+      "distance": "133",
+      "event": "Camp northwest of the Black Gates. All are wakeful. Sense that things prowl around them. No wind. Cold"
+    },
+    {
+      "distance": "133",
+      "event": "Dawn. North wind rises. Turn southeast toward the Morannon"
+    },
+    {
+      "distance": "136",
+      "event": "Pass among slag heaps and noisome pits"
+    },
+    {
+      "distance": "138",
+      "event": "Early day: reach the Black Gate. Aragorn arrays Host on two hills of stone. Parley with the Mouth of Sauron. The Battle of Morannon. Barad-d&#251;r and the Morannon collapse when the Ring is destroyed"
+    }
+  ]
+}

@@ -1,0 +1,449 @@
+{
+  "routeId": "1.2",
+  "list": [
+    {
+      "distance": "0",
+      "event": "Isengard. Confrontation with Saruman. Gandalf breaks Saruman&#8217;s staff. Grima Wormtongue casts down the palant&#237;r of Orthanc. Pippin retrieves it, but Gandalf quickly takes it. Leave Isengard (ca. 4 p.m.)"
+    },
+    {
+      "distance": "0.5",
+      "event": "Pass through the gates of Isengard. Follow the stone-paved road south."
+    },
+    {
+      "distance": "2",
+      "event": "Flooded spots gradually are disappearing."
+    },
+    {
+      "distance": "4",
+      "event": "Pass the pillar of the White Hand. Ents have broken the hand apart."
+    },
+    {
+      "distance": "6",
+      "event": "Stone pavement ends. Highway continues."
+    },
+    {
+      "distance": "8",
+      "event": "Night falls. Waxing moon rises."
+    },
+    {
+      "distance": "10",
+      "event": "All around are tree stumps, weeds and thorns."
+    },
+    {
+      "distance": "14",
+      "event": "Leave the Wizard&#8217;s Vale. Highway goes SSE toward the Fords."
+    },
+    {
+      "distance": "16",
+      "event": "Reach the campsite of the night before. Turn west."
+    },
+    {
+      "distance": "17",
+      "event": "Camp (ca. 10 p.m.). In a dale next to the south-facing slope of Dol Baran, the last hill of the northern ranges. Heather and bracken fern are turning green. While Gandalf sleeps, Pippin takes the palant&#237;r and is seen by Sauron. Gandalf prepares to ride out at once with Pippin. When a Nazg&#251;l rides over, he warns Th&#233;oden not to wait for dawn to leave."
+    },
+    {
+      "distance": "17",
+      "event": "Aragorn and Merry, Legolas and Gimli ride out with Th&#233;oden, &#201;omer and 20 Riders (ca. midnight)."
+    },
+    {
+      "distance": "18",
+      "event": "Return to the highway and turn south."
+    },
+    {
+      "distance": "33",
+      "event": "Company crosses the Fords of Isen."
+    },
+    {
+      "distance": "35",
+      "event": "They are overtaken by the Grey Company: Halbarad D&#250;nadan and 30 rangers of the North (summoned by Galadriel), plus Elrond&#8217;s sons: Elladan and Elrohir. Moon is westering, but shines out through clouds."
+    },
+    {
+      "distance": "48",
+      "event": "Reach the road to the Deeping Coomb and turn south to Helm&#8217;s Deep."
+    },
+    {
+      "distance": "54",
+      "event": "Climb upward through the Coomb."
+    },
+    {
+      "distance": "57.5",
+      "event": "Pass through Helm&#8217;s Dike."
+    },
+    {
+      "distance": "58",
+      "event": "Reach Helm&#8217;s Deep (ca. 6 a.m.). Enter the Hornburg. REST. Late morning Legolas and Gimli show Merry around the Deep. They lunch with Th&#233;oden and Riders. Aragorn confronts Sauron in the palant&#237;r and learns of the Black Fleet of Umbar. After consulting with Th&#233;oden, he decides to take the open road and ride for the Paths of the Dead. Merry rides with Rohirrim (1 p.m.). Aragorn eats, then departs (1:30 p.m.)."
+    },
+    {
+      "distance": "58.5",
+      "event": "Pass through Helm&#8217;s Dike. Ride swiftly down the Deeping Coomb."
+    },
+    {
+      "distance": "68",
+      "event": "Reach the beaten road from the Ford of Isen and turn east to Edoras."
+    },
+    {
+      "distance": "90",
+      "event": "Cross a small stream. Dusk."
+    },
+    {
+      "distance": "100",
+      "event": "Cross a small stream."
+    },
+    {
+      "distance": "113",
+      "event": "Cross a small stream. Camp (ca. 9:30 p.m.)."
+    },
+    {
+      "distance": "113",
+      "event": "Leave at dawn."
+    },
+    {
+      "distance": "120",
+      "event": "Cross a small stream."
+    },
+    {
+      "distance": "129",
+      "event": "Cross a small stream."
+    },
+    {
+      "distance": "140",
+      "event": "Cross a small stream."
+    },
+    {
+      "distance": "153",
+      "event": "Cross a small stream. Brief stop. Eat."
+    },
+    {
+      "distance": "176",
+      "event": "Ford the Snowbourne. Turn left on the road to Edoras."
+    },
+    {
+      "distance": "177",
+      "event": "Climb to Meduseld in Edoras. Brief stop."
+    },
+    {
+      "distance": "178",
+      "event": "Return to the Ford. Turn south into Harrowdale."
+    },
+    {
+      "distance": "186",
+      "event": "Hamlet of Upbourn."
+    },
+    {
+      "distance": "192",
+      "event": "Hamlet of Underharrow. Peaks of Irensaga are high above."
+    },
+    {
+      "distance": "196",
+      "event": "Opposite the waterfalls from the western ravine."
+    },
+    {
+      "distance": "196.5",
+      "event": "Reach the trail from the western ravine. Road turns east to the Hold."
+    },
+    {
+      "distance": "197",
+      "event": "Climb the switchback road &#8216;Stair of the Hold&#8217; some hundreds of feet up the mountain face. Ancient statues mark each turn of the road: the P&#250;kel-men. A last cutting climbs a short slope. Dusk."
+    },
+    {
+      "distance": "198",
+      "event": "Reach the Firienfeld of Dunharrow. Aragorn tells &#201;owyn of his plans."
+    },
+    {
+      "distance": "198",
+      "event": "Aragorn and company head east to the Dwimorberg, following the path lined with standing stones (ca. 6 a.m.)."
+    },
+    {
+      "distance": "200",
+      "event": "They pass into the gloom of the dark woods of the Dimholt. See a last mighty standing stone. Horses refuse to pass and must be led."
+    },
+    {
+      "distance": "200.7",
+      "event": "They pass the Dark Door into the Haunted Mountain, still leading the horses: the Paths of the Dead."
+    },
+    {
+      "distance": "202",
+      "event": "In a cavern they see Baldor&#8217;s skeleton by a closed stone door. Aragorn summons the Dead. The torches are blown out."
+    },
+    {
+      "distance": "204",
+      "event": "Gimli is the last of the Living. He goes in fear. The Dead follow."
+    },
+    {
+      "distance": "225",
+      "event": "Gimli stumbles and falls. Crawls."
+    },
+    {
+      "distance": "227",
+      "event": "The sound of water begins to be heard &#8211; the springs of the River Morthond: the Blackroot."
+    },
+    {
+      "distance": "228",
+      "event": "Exit the Paths of the Dead through a high-arched broad opening. Remount horses (ca. 4 p.m.)."
+    },
+    {
+      "distance": "230",
+      "event": "A steep road descends through the deep ravine. The river is on the left."
+    },
+    {
+      "distance": "232",
+      "event": "Evening falls."
+    },
+    {
+      "distance": "234",
+      "event": "Ravine ends like &#8220;a crack in a wall.&#8221; The river pours over many falls. Reach the wide Morthond Vale (ca. 7 p.m.). See lights in houses below."
+    },
+    {
+      "distance": "236",
+      "event": "Cross a bridge over the torrent and follow a road east into the Vale."
+    },
+    {
+      "distance": "244",
+      "event": "As reach houses, all lights are put out. Bells are ringing in warning."
+    },
+    {
+      "distance": "248",
+      "event": "River turns southwest, further away from the road."
+    },
+    {
+      "distance": "257",
+      "event": "Reach the foot of the Hill of Erech."
+    },
+    {
+      "distance": "258",
+      "event": "Aragorn climbs to the Stone of Erech. Arrives just before midnight. The stone is a great globe half buried in the ground, but the height of a man. Aragorn&#8217;s great banner is unfurled and he speaks with the Dead. Camp."
+    },
+    {
+      "distance": "258",
+      "event": "Dawn. Ride from Erech in great haste, southeast down the road."
+    },
+    {
+      "distance": "274",
+      "event": "Pass through the most northeasterly lands of Morthond &#8211; home of 500 bowmen who have gone to Minas Tirith with Duinhir and his sons."
+    },
+    {
+      "distance": "290",
+      "event": "Road runs between hills on both sides: Tarlang&#8217;s Neck."
+    },
+    {
+      "distance": "300",
+      "event": "Enter Lamedon &#8211; home of a few grim hillmen who have gone to Minas Tirith without a captain. As they reach the uplands, the Dead sweep past, but Aragorn orders them back. Stop to eat: Noon."
+    },
+    {
+      "distance": "310",
+      "event": "Road drops slowly into the lowlands."
+    },
+    {
+      "distance": "320",
+      "event": "The road continues to curve through a lowland between the Hills of Tarlang on the west and an outlying spur of the White Mountains on the north."
+    },
+    {
+      "distance": "330",
+      "event": "Hills of Tarlang curve east and thrust closer to the road."
+    },
+    {
+      "distance": "340",
+      "event": "To the east the River Ciril meanders through the meads."
+    },
+    {
+      "distance": "344",
+      "event": "Dusk. Eat, then ride on."
+    },
+    {
+      "distance": "350",
+      "event": "The Hills of Tarlang end and the vale of the River Ringl&#243; opens to the southwest. The Hills of Tarnost rise ahead in the southeast."
+    },
+    {
+      "distance": "360",
+      "event": "The road turns more east toward the River Ciril."
+    },
+    {
+      "distance": "367",
+      "event": "The fords of Ciril. A red sunset can be seen far in the west lighting the tops of the Pinnath Gelin (Green Hills)."
+    },
+    {
+      "distance": "368",
+      "event": "Camp just past the ford (ca. 9:30 p.m.). Farms of the Township of Calembel are deserted &#8211; many gone to war; the rest, fled."
+    },
+    {
+      "distance": "368",
+      "event": "No dawn. Leave when gloom first lightens."
+    },
+    {
+      "distance": "370",
+      "event": "Pass the village of Calembel."
+    },
+    {
+      "distance": "380",
+      "event": "Towering hills rise on the north. To the south the Ciril joins the Ringl&#243;."
+    },
+    {
+      "distance": "390",
+      "event": "A valley opens on the north stretching to the foot of Halifirien mount."
+    },
+    {
+      "distance": "400",
+      "event": "A great southern spur of the White Mountains rises just ten miles north. To the south are the Hills of Tarnost."
+    },
+    {
+      "distance": "410",
+      "event": "Noon."
+    },
+    {
+      "distance": "414",
+      "event": "They ford the Ringl&#243; at Ethring. Stop briefly to eat."
+    },
+    {
+      "distance": "420",
+      "event": "Road rises slightly and curves due south as it is barred on the east by a great arm of the mountains, jutting down from the mount of Rimmon."
+    },
+    {
+      "distance": "430",
+      "event": "Road climbs a slope at the very end of the mountain arm."
+    },
+    {
+      "distance": "440",
+      "event": "Beyond the rise of the crest, they descend into some of the richest lands thus far: Dor-en-Ernil (Land of the Prince) &#8211; the most eastern lands under Prince Imrahil."
+    },
+    {
+      "distance": "458",
+      "event": "Past dusk. Camp in the midst of the open valley."
+    },
+    {
+      "distance": "458",
+      "event": "No dawn. Leave at first light."
+    },
+    {
+      "distance": "480",
+      "event": "The lands open out, almost flat all the way to the Great River Anduin."
+    },
+    {
+      "distance": "500",
+      "event": "Noon. Eat."
+    },
+    {
+      "distance": "510",
+      "event": "They drop into coastal lowlands as they near the estuary of the Gilrain."
+    },
+    {
+      "distance": "518",
+      "event": "A low terrace appears east of the road, damming a small lake above."
+    },
+    {
+      "distance": "522",
+      "event": "Reach the outskirts of the town of Linhir."
+    },
+    {
+      "distance": "524",
+      "event": "At the fords where the Gilrain and the Serni join, they find Men of Lamedon fighting off ships of Umbar and Harad (ca. 3:30 p.m.). All flee from the Dead except Angbor of Lamedon, whom Aragorn bids follow."
+    },
+    {
+      "distance": "528",
+      "event": "Camp east of the fords."
+    },
+    {
+      "distance": "528",
+      "event": "No dawn. Road now curves east. The terrace face rises on the north as the company rides forth."
+    },
+    {
+      "distance": "532",
+      "event": "The River Serni cuts through the terrace face and flows west."
+    },
+    {
+      "distance": "544",
+      "event": "All this area is already contested. The enemy flies east before them."
+    },
+    {
+      "distance": "560",
+      "event": "Road swings more to the northeast."
+    },
+    {
+      "distance": "570",
+      "event": "The fabled &#8216;green fields of Lebennin&#8217; appear grey and trampled."
+    },
+    {
+      "distance": "580",
+      "event": "Road parallels the course of the Anduin, 15 miles away."
+    },
+    {
+      "distance": "598",
+      "event": "Camp again."
+    },
+    {
+      "distance": "598",
+      "event": "Leave at first light."
+    },
+    {
+      "distance": "610",
+      "event": "Road begins to swing toward the Great River."
+    },
+    {
+      "distance": "620",
+      "event": "The enemy are still being driven ahead, but are getting desperate as they near the river."
+    },
+    {
+      "distance": "630",
+      "event": "Cross the River Sirith. Reach the Pelargir. Legolas hears the cries of gulls."
+    },
+    {
+      "distance": "633",
+      "event": "Noon. At the Havens of Pelargir is the Fleet of Umbar: 50 great ships and numerous smaller vessels. The Haradrim turn to fight. Aragorn calls forth the Dead. The Battle of Pelargir. The mariners cast themselves overboard in fear. Aragorn drives through the enemies on shore. The Dead depart after Aragorn declares their oaths fulfilled. Freed captives and the host from that part of Gondor gather and prepare the ships."
+    },
+    {
+      "distance": "633",
+      "event": "Fleet goes north at first light. No wind. Row against the current."
+    },
+    {
+      "distance": "656",
+      "event": "Pass between the fields of Lebennin on the west and South Ithilien on east."
+    },
+    {
+      "distance": "676",
+      "event": "Legolas senses the change in the wind."
+    },
+    {
+      "distance": "689",
+      "event": "Night falls. Due north a red glow can be seen under the cloud &#8211; Minas Tirith is burning."
+    },
+    {
+      "distance": "708",
+      "event": "River Erui enters on the west."
+    },
+    {
+      "distance": "718",
+      "event": "Midnight. Continue upriver. Sea-crafty men sense wind from the sea."
+    },
+    {
+      "distance": "730",
+      "event": "Hoist sail. Speed grows."
+    },
+    {
+      "distance": "740",
+      "event": "River curves west toward Minas Tirith."
+    },
+    {
+      "distance": "750",
+      "event": "The lands of Lossarnach are on the west. Many folk live there under the kindly rule of Furlong the Fat."
+    },
+    {
+      "distance": "760",
+      "event": "Dawn. Clouds lighten."
+    },
+    {
+      "distance": "764",
+      "event": "The southern slopes of the Emyn Arnen appear on the eastern shore."
+    },
+    {
+      "distance": "780",
+      "event": "River swings northeast as it rounds the &#8216;knee&#8217; of the Emyn Arnen."
+    },
+    {
+      "distance": "783",
+      "event": "The Battle of the Pelennor Fields has been raging since dawn and &#201;omer sees the black ships arriving at Harlond: the havens southeast of the city (9 a.m.). On the lead ship Aragorn&#8217;s banner is unfurled: the White Tree, seven stars, and golden crown &#8211; signs of Elendil. Aragorn leads his forces onto the field of battle. Winds blow away the darkness."
+    },
+    {
+      "distance": "784.5",
+      "event": "Aragorn and &#201;omer meet in the midst of battle."
+    }
+  ]
+}

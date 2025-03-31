@@ -1,0 +1,273 @@
+{
+  "routeId": "2.2",
+  "list": [
+    {
+      "distance": "0",
+      "event": "Isengard. Confrontation with Saruman. Gandalf breaks Saruman&#8217;s staff. Grima Wormtongue casts down the palant&#237;r of Orthanc. Pippin retrieves it, but Gandalf quickly takes it. Leave Isengard (ca. 4 p.m.)"
+    },
+    {
+      "distance": "0.5",
+      "event": "Pass through the gates of Isengard. Follow the stone-paved road south"
+    },
+    {
+      "distance": "2",
+      "event": "Flooded spots gradually are disappearing"
+    },
+    {
+      "distance": "4",
+      "event": "Pass the pillar of the White Hand. Ents have broken the hand apart"
+    },
+    {
+      "distance": "6",
+      "event": "Stone pavement ends. Highway continues"
+    },
+    {
+      "distance": "8",
+      "event": "Night falls. Waxing moon rises"
+    },
+    {
+      "distance": "10",
+      "event": "All around are tree stumps, weeds and thorns"
+    },
+    {
+      "distance": "14",
+      "event": "Leave the Wizard&#8217;s Vale. Highway goes SSE toward the Fords"
+    },
+    {
+      "distance": "16",
+      "event": "Reach the campsite of the night before. Turn west"
+    },
+    {
+      "distance": "17",
+      "event": "Camp (ca. 10 p.m.). In a dale next to the south-facing slope of Dol Baran, the last hill of the northern ranges. Heather and bracken fern are turning green. While Gandalf sleeps, Pippin takes the palant&#237;r and is seen by Sauron. Gandalf plans to ride out at once with Pippin. When a Nazg&#251;l rides over, he warns Th&#233;oden to not wait for the dawn to leave"
+    },
+    {
+      "distance": "18",
+      "event": "Gandalf and Pippin return to the highway and turn south (ca. 11 p.m.)"
+    },
+    {
+      "distance": "32",
+      "event": "Shadowfax reaches the west bank by the Fords of Isen"
+    },
+    {
+      "distance": "33",
+      "event": "Midnight. Shadowfax crosses the Fords of Isen"
+    },
+    {
+      "distance": "42",
+      "event": "Gandalf points out the peaks of the Thrihyrne to the south. He tells Pippin the history of the palant&#237;ri &#8211; the Seeing Stones of Gondor"
+    },
+    {
+      "distance": "48",
+      "event": "Reach the road to the Deeping Coomb and Helm&#8217;s Deep. Gandalf tells Pippin to ask Gimli about the Glittering Caves of Aglarond. Gandalf urges Shadowfax to even greater speed"
+    },
+    {
+      "distance": "70",
+      "event": "Cross a small stream. Brief stop. Eat"
+    },
+    {
+      "distance": "80",
+      "event": "Cross second small stream"
+    },
+    {
+      "distance": "93",
+      "event": "Cross third small stream"
+    },
+    {
+      "distance": "100",
+      "event": "Cross fourth small stream"
+    },
+    {
+      "distance": "109",
+      "event": "Cross fifth small stream"
+    },
+    {
+      "distance": "120",
+      "event": "Cross sixth small stream"
+    },
+    {
+      "distance": "133",
+      "event": "Cross last small stream!"
+    },
+    {
+      "distance": "156",
+      "event": "Dawn. Ford the Snowbourne. Turn left on the road to Edoras"
+    },
+    {
+      "distance": "157",
+      "event": "Climb to Meduseld. Nazgûl flies over. Pippin sleeps during the day (Mar. 6). Gandalf begins organizing the Muster of Rohan"
+    },
+    {
+      "distance": "158",
+      "event": "Dusk. Return to the road. Ride east at great speed"
+    },
+    {
+      "distance": "160",
+      "event": "The road curves easterly around the mountain spur behind Edoras"
+    },
+    {
+      "distance": "162",
+      "event": "The Snowbourne meanders through willow trees left of the road"
+    },
+    {
+      "distance": "172",
+      "event": "The road curves southeast, hugging the eastern foothills of Irensaga"
+    },
+    {
+      "distance": "180",
+      "event": "Hills draw away to the south. Road continues through willows"
+    },
+    {
+      "distance": "190",
+      "event": "Scattered trees broaden into a wide willow thicket where the Snowbourne meets the Entwash"
+    },
+    {
+      "distance": "198",
+      "event": "Willow woods end. Road turns more south, parallels the Entwash"
+    },
+    {
+      "distance": "210",
+      "event": "Reach the area called the &#8216;Folde&#8217;, tucked against the hills, sheltered from the west and the south. A snowcapped peak rises on the south. North across the river the wide grassy Plains of Rohan are moonlit"
+    },
+    {
+      "distance": "220",
+      "event": "Road turns more to the east. Brief stop. Eat"
+    },
+    {
+      "distance": "226",
+      "event": "Cross a small stream"
+    },
+    {
+      "distance": "237",
+      "event": "Cross a small stream"
+    },
+    {
+      "distance": "250",
+      "event": "North of the road, the Entwash, flowing more slowly in the level plains is choked with vegetation and splits into multiple braided channels"
+    },
+    {
+      "distance": "257",
+      "event": "Cross a small stream. Enter the area called the &#8216;Fenmarch&#8217; &#8211; a wetter area, especially north of the road where the Entwash becomes sluggish and starts to expand outward into a delta"
+    },
+    {
+      "distance": "274",
+      "event": "Cross a small stream"
+    },
+    {
+      "distance": "277",
+      "event": "South of the road great oak trees begin to appear &#8211; outliers of Firien Wood. Camp during day (Mar. 7)"
+    },
+    {
+      "distance": "277",
+      "event": "Leave at dusk"
+    },
+    {
+      "distance": "290",
+      "event": "Northeast across the plain (80 miles away) the East Wall of Rohan and the Western Emyn Muil could be seen if it were daylight"
+    },
+    {
+      "distance": "293",
+      "event": "Cross the Mering Stream: Gondor. Enter the heart of the Firien Wood. "
+    },
+    {
+      "distance": "304",
+      "event": "The Beacon of Halifirien lies right of the road on a hill which rises above the trees"
+    },
+    {
+      "distance": "315",
+      "event": "Leave Firien Wood"
+    },
+    {
+      "distance": "317",
+      "event": "Cross a small stream. The Beacons are Lit: far to the east Pippin spots the beacon of Amon D&#238;n as it is lit. Almost immediately the beacon fires to the west are ignited. Gandalf explains the beacons to Pippin"
+    },
+    {
+      "distance": "325",
+      "event": "The snowcapped peak above Calenhad rises to the right, lit by the nearly full moon"
+    },
+    {
+      "distance": "336",
+      "event": "The beacon tower of Calenhad stands on a foothill of Canlenhad peak. The beacon fires are now extinguished. Brief stop. Eat"
+    },
+    {
+      "distance": "354",
+      "event": "Cross a small stream"
+    },
+    {
+      "distance": "365",
+      "event": "Cross a small stream. The beacon hill of Minrimmon is on the right"
+    },
+    {
+      "distance": "370",
+      "event": "To the north the delta of the Entwash has broadened to over 50 miles. Rauros lies beyond, 100 miles away. Setting moon lights mists over the fens"
+    },
+    {
+      "distance": "380",
+      "event": "High above to the south rise the sawtoothed tips of Rimmon &#8211; the highest peak in the eastern White Mountains"
+    },
+    {
+      "distance": "397",
+      "event": "Dawn. Camp near the beacon hill of Erelas (day of Mar. 8)"
+    },
+    {
+      "distance": "397",
+      "event": "Leave at dusk"
+    },
+    {
+      "distance": "411",
+      "event": "Cross a small stream"
+    },
+    {
+      "distance": "416",
+      "event": "Pass the beacon on Nardol, the &#8216;Fire Hill.&#8217;"
+    },
+    {
+      "distance": "428",
+      "event": "Cross a small stream &#8211; the last which empties into the delta of the Entwash. West edge of Dr&#250;adan Forest south of the road"
+    },
+    {
+      "distance": "444",
+      "event": "Eilenach beacon stands on a steep hill to the south, rising above the trees of Dr&#250;adan Forest"
+    },
+    {
+      "distance": "457",
+      "event": "Brief stop. Eat"
+    },
+    {
+      "distance": "464",
+      "event": "Road curves slightly to the south. Due east across the Anduin the peaks of the Ephel D&#249;ath stand dark against the moonlit sky"
+    },
+    {
+      "distance": "472",
+      "event": "The beacon hill Amon D&#238;n is 5 miles due south"
+    },
+    {
+      "distance": "478",
+      "event": "Road curves still more south around Amon D&#238;n"
+    },
+    {
+      "distance": "482",
+      "event": "Road runs SE. The thickets of the Grey Wood begin right of the road"
+    },
+    {
+      "distance": "490",
+      "event": "The Morgul Vale lies 35 miles due east"
+    },
+    {
+      "distance": "496",
+      "event": "The Grey Wood ends"
+    },
+    {
+      "distance": "500",
+      "event": "Mt. Mindolluin is visible to the southwest, lit by the predawn glow"
+    },
+    {
+      "distance": "507",
+      "event": "Dawn. Gandalf is challenged by the guards at the gate of the Rammas Echor: the wall surrounding the Pelennor Fields. Repairs are underway. "
+    },
+    {
+      "distance": "517",
+      "event": "Reach the Gates of Minas Tirith"
+    }
+  ]
+}

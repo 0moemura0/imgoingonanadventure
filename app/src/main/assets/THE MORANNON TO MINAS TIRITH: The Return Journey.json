@@ -1,0 +1,157 @@
+{
+  "routeId": "6.2",
+  "list": [
+    {
+      "distance": "0",
+      "event": "Wounded are placed on supply-wains. Move slowly to protect the wounded. Begin trek down the Southward Road, away from the rubble of the Morannon. Scouts follow retreating enemies to assure they do not return"
+    },
+    {
+      "distance": "2",
+      "event": "Ride southwest. Road runs in a trenchlike valley between the mountains and the moors. It is newly repaired for many miles"
+    },
+    {
+      "distance": "9",
+      "event": "End of the slag heaps"
+    },
+    {
+      "distance": "19",
+      "event": "Stop for the night. Camp along the road"
+    },
+    {
+      "distance": "19",
+      "event": "Start ca. 8 a.m. Continue down the road"
+    },
+    {
+      "distance": "22",
+      "event": "Road turns more to the south"
+    },
+    {
+      "distance": "24",
+      "event": "Reach northern edge of Ithilien. East across road are dark trees. Closer &#8216;a tumbled heathland&#8217; with &#8216;knots of pine-trees.&#8217; Air is fresh and fragrant"
+    },
+    {
+      "distance": "25",
+      "event": "Road is straight and level. Go more quickly"
+    },
+    {
+      "distance": "27",
+      "event": "In valley between mountains on east and steep slopes on west"
+    },
+    {
+      "distance": "30",
+      "event": "Woods appear to the west. Some growth begins along the road edges"
+    },
+    {
+      "distance": "33",
+      "event": "Road crosses stream on an arched masonry bridge"
+    },
+    {
+      "distance": "38",
+      "event": "Road becomes more overgrown. Camp along the road"
+    },
+    {
+      "distance": "38",
+      "event": "Start ca. 8 a.m. Continue on Southward Road"
+    },
+    {
+      "distance": "42",
+      "event": "Another stream is bridged"
+    },
+    {
+      "distance": "44",
+      "event": "Reach north end of a long straight cutting through a stony ridge"
+    },
+    {
+      "distance": "47",
+      "event": "Turn off the road. Climb west bank and go downhill. Many wounded now can walk. Some ride horses. Others are carried on litters. Many troops continue south on the road for return directly to Minas Tirith"
+    },
+    {
+      "distance": "48",
+      "event": "Follow the nearby stream to the small clear pool visited 3 weeks before by Frodo and Sam. Troops find and cleanse nearby orc fire-ring"
+    },
+    {
+      "distance": "50",
+      "event": "Troops stay north of stream. Descend steep slope"
+    },
+    {
+      "distance": "52",
+      "event": "Thread their way through woodland, north of the stream channel"
+    },
+    {
+      "distance": "55",
+      "event": "Trees grow thinner. The stream now runs &#8220;in a narrow gorge.&#8221;"
+    },
+    {
+      "distance": "56",
+      "event": "Camp near Henneth Ann&#251;n. Some go to the caves for supplies"
+    },
+    {
+      "distance": "56",
+      "event": "Continue downhill through woodland. Must skirt widely around the hollow of the waterfall. "
+    },
+    {
+      "distance": "59",
+      "event": "Return to the stream. It still falls swiftly"
+    },
+    {
+      "distance": "62",
+      "event": "Slope is more gentle. Trees begin to open out. The Anduin can be seen"
+    },
+    {
+      "distance": "64",
+      "event": "Another stream joins on the southern shore"
+    },
+    {
+      "distance": "68",
+      "event": "Reach the open, grassy flatlands by the Anduin: the Field of Cormallen"
+    },
+    {
+      "distance": "70",
+      "event": "Set up camp with numerous pavilions. "
+    },
+    {
+      "distance": "70",
+      "event": "Leave early. The Host goes south, taking boats down the Anduin"
+    },
+    {
+      "distance": "71",
+      "event": "The south end of Cair Andros lies on the west, stream mouth on east"
+    },
+    {
+      "distance": "76",
+      "event": "Stream enters on east"
+    },
+    {
+      "distance": "84",
+      "event": "Can see Amon D&#238;n due west"
+    },
+    {
+      "distance": "94",
+      "event": "Stream enters on east"
+    },
+    {
+      "distance": "106",
+      "event": "Reach northern edge of Osgiliath. Continue down river to landings"
+    },
+    {
+      "distance": "107",
+      "event": "Reach landings of Osgiliath. Dock and unload wounded"
+    },
+    {
+      "distance": "107",
+      "event": "Mid-morning. Leave Osgiliath and go west along the Causeway"
+    },
+    {
+      "distance": "108",
+      "event": "Reach the Causeway Forts on the Rammas Echor"
+    },
+    {
+      "distance": "112",
+      "event": "Continue on the road across the Pelennor"
+    },
+    {
+      "distance": "120",
+      "event": "Reach the Gates of Minas Tirith. Aragorn camps in the field"
+    }
+  ]
+}
