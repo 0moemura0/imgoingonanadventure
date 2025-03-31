@@ -35,6 +35,9 @@ class SplashActivity : AppCompatActivity() {
 
         viewModel.checkEventChunk()
 
-        viewModel.liveData.observe(this) { startActivity(Intent(this, MainActivity::class.java)) }
+        viewModel.liveData.observe(this) {
+            startActivity(Intent(this, MainActivity::class.java))
+            finish()
+        }
     }
 }

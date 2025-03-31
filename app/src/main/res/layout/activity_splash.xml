@@ -16,10 +16,11 @@
     <ImageView
         android:id="@+id/splash_image"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:layout_gravity="center"
         android:layout_marginBottom="60dp"
         android:importantForAccessibility="no"
-        android:scaleType="centerCrop"
-        android:src="@drawable/splash_text" />
+        android:scaleType="fitCenter"
+        android:src="@drawable/splash_fg" />
+
 </FrameLayout>

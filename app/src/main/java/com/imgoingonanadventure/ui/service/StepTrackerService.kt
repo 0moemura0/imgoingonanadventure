@@ -207,7 +207,7 @@ class StepTrackerService : Service() {
                 .build()
 
         NotificationManagerCompat.from(this).notify(NOTIFICATION_ID, newNotification)
-        liveStepCount.value = stepCount
+        liveStepCount.postValue(stepCount)
     }
 
     @SuppressLint("MissingPermission")

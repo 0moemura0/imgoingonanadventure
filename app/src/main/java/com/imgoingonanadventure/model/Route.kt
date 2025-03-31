@@ -16,3 +16,15 @@ object RouteSequence {
         Route.RAUROS_TO_DOOM
     )
 }
+
+class RouteIdToRouteMapper {
+    operator fun invoke(routeId: String): Route {
+        return when (routeId) {
+            Route.BAG_END_TO_RIVENDELL.routeId -> Route.BAG_END_TO_RIVENDELL
+            Route.RIVENDELL_TO_LOTHLORIEN.routeId -> Route.RIVENDELL_TO_LOTHLORIEN
+            Route.LOTHLORIEN_TO_RAUROS.routeId -> Route.LOTHLORIEN_TO_RAUROS
+            Route.RAUROS_TO_DOOM.routeId -> Route.RAUROS_TO_DOOM
+            else -> Route.BAG_END_TO_RIVENDELL
+        }
+    }
+}

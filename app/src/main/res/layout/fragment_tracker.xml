@@ -2,78 +2,136 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/linearLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
     android:orientation="vertical"
     tools:context="com.imgoingonanadventure.ui.tracker.TrackerFragment">
 
+    <ImageView
+        android:id="@+id/imageBackground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:importantForAccessibility="no"
+        android:scaleType="centerCrop"
+        android:src="@drawable/gradient_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline"
+        android:id="@+id/guideline_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.4"/>
+        app:layout_constraintGuide_percent="0.3" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_character"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.6" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_grass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.85" />
+
+    <ImageView
+        android:id="@+id/viewGrass"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/grass"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="@id/guideline_grass" />
+
+    <ImageView
+        android:id="@+id/imageviewCharacter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/person"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/guideline_character" />
+
+    <ImageView
+        android:id="@+id/top_line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        android:src="@drawable/top_line"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/viewToSettings" />
+
+    <ImageView
+        android:id="@+id/bottom_line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bottom_line"
+        app:layout_constraintBottom_toTopOf="@id/guideline_character"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <View
-        android:id="@+id/viewToCharacter"
-        android:layout_width="40dp"
+        android:id="@+id/viewToSettings"
+        android:layout_width="60dp"
+        android:layout_height="70dp"
+        android:layout_margin="20dp"
         android:layout_marginStart="20dp"
-        android:layout_height="40dp"
-        android:background="@android:drawable/btn_star"
-        app:layout_constraintBottom_toBottomOf="@id/trackerSubtitle"
-        app:layout_constraintEnd_toStartOf="@id/trackerSubtitle"
+        android:background="@drawable/palanir"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@id/trackerSubtitle" />
-
-    <TextView
-        android:id="@+id/trackerSubtitle"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:gravity="center"
-        app:layout_constraintEnd_toStartOf="@id/viewToNotes"
-        app:layout_constraintStart_toEndOf="@id/viewToCharacter"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintEnd_toEndOf="@id/guideline" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <View
         android:id="@+id/viewToNotes"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_margin="20dp"
         android:layout_marginEnd="20dp"
-        android:background="@android:drawable/ic_menu_compass"
-        app:layout_constraintBottom_toBottomOf="@id/trackerSubtitle"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@id/trackerSubtitle"
-        app:layout_constraintTop_toTopOf="@id/trackerSubtitle"
-        />
+        android:background="@drawable/note"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <View
+        android:id="@+id/viewToTracker"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_margin="20dp"
+        android:background="@drawable/hike"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <TextView
         android:id="@+id/trackerTitle"
+        style="@style/TextAppearance.ImGoingOnAnAdventure.Body"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:gravity="center"
+        android:padding="10dp"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toBottomOf="@id/top_line"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/guideline" />
+        app:layout_constraintTop_toTopOf="@id/top_line" />
 
     <TextView
-        android:id="@+id/trackerTitleSteps"
-        android:layout_width="wrap_content"
+        android:id="@+id/trackerSubtitle"
+        style="@style/TextAppearance.ImGoingOnAnAdventure.Body"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
+        android:padding="10dp"
+        app:layout_constraintBottom_toTopOf="@id/bottom_line"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/trackerTitle" />
-
-    <View
-        android:background="@android:drawable/ic_menu_directions"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        android:id="@+id/viewToTracker"
-        android:layout_width="60dp"
-        android:layout_height="60dp"/>
-
+        app:layout_constraintTop_toBottomOf="@id/top_line" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

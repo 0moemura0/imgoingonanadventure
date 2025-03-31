@@ -9,6 +9,7 @@ interface ViewModuleModule {
 
     val trackerViewModelFactory: ViewModelProvider.Factory
     val splashViewModelFactory: ViewModelProvider.Factory
+    val settingsViewModelFactory: ViewModelProvider.Factory
 }
 
 class ViewModuleModuleImpl(private val repositoryModule: RepositoryModule) : ViewModuleModule {
@@ -17,6 +18,9 @@ class ViewModuleModuleImpl(private val repositoryModule: RepositoryModule) : Vie
         get() = viewModelFactory { TrackerViewModel(repositoryModule.trackerRepository) }
 
     override val splashViewModelFactory: ViewModelProvider.Factory
+        get() = viewModelFactory { SplashViewModel(repositoryModule.trackerRepository) }
+
+    override val settingsViewModelFactory: ViewModelProvider.Factory
         get() = viewModelFactory { SplashViewModel(repositoryModule.trackerRepository) }
 }
 

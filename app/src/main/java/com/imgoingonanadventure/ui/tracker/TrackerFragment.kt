@@ -3,10 +3,10 @@ package com.imgoingonanadventure.ui.tracker
 import android.Manifest.permission.ACTIVITY_RECOGNITION
 import android.content.Intent
 import android.os.Bundle
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
 import android.widget.TextView
 import androidx.core.content.PermissionChecker
 import androidx.fragment.app.Fragment
@@ -15,11 +15,10 @@ import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.lifecycleScope
 import androidx.lifecycle.repeatOnLifecycle
 import com.imgoingonanadventure.App
-import com.imgoingonanadventure.ui.character.CharacterFragment
 import com.imgoingonanadventure.ui.notes.NotesFragment
 import com.imgoingonanadventure.ui.service.StepTrackerService
+import com.imgoingonanadventure.ui.settings.SettingsFragment
 import com.imgoingontheadventure.R
-import kotlinx.coroutines.flow.collectLatest
 import kotlinx.coroutines.launch
 
 class TrackerFragment : Fragment() {
@@ -38,40 +37,39 @@ class TrackerFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        val image: ImageView = view.findViewById(R.id.imageBackground)
         val subtitle: TextView = view.findViewById(R.id.trackerSubtitle)
         val title: TextView = view.findViewById(R.id.trackerTitle)
-        val titleSteps: TextView = view.findViewById(R.id.trackerTitleSteps)
-        val buttonToCharacter: View = view.findViewById(R.id.viewToCharacter)
+        val buttonToSettings: View = view.findViewById(R.id.viewToSettings)
         val buttonToNotes: View = view.findViewById(R.id.viewToNotes)
         val buttonToTracker: View = view.findViewById(R.id.viewToTracker)
 
-        setButtons(buttonToCharacter, buttonToNotes, buttonToTracker)
-        observeData(subtitle, title, titleSteps)
+        setButtons(buttonToSettings, buttonToNotes, buttonToTracker)
+        observeData(subtitle, title, image)
 
         viewModel.getStepState()
 
         checkPermission()
     }
 
-    private fun observeData(subtitle: TextView, title: TextView, titleSteps: TextView) {
-
+    private fun observeData(
+        subtitle: TextView,
+        title: TextView,
+        image: ImageView
+    ) {
         viewLifecycleOwner.lifecycleScope.launch {
             repeatOnLifecycle(Lifecycle.State.STARTED) {
-                viewModel.state.collectLatest { state ->
-                    when (state) {
-                        is StepState.Loading -> Unit
-                        is StepState.Data -> {
-                            subtitle.text = state.event.event
-                            title.text = state.distance.toString()
-                            titleSteps.text = state.steps.toString()
-                        }
-
-                        is StepState.Error -> Log.e(
-                            TAG,
-                            "onViewCreated: ${state.error.stackTrace.take(5)}"
-                        )
-                    }
-                }
+                viewModel.stateEvent.collect { subtitle.text = it }
+            }
+        }
+        viewLifecycleOwner.lifecycleScope.launch {
+            repeatOnLifecycle(Lifecycle.State.STARTED) {
+                viewModel.stateDistance.collect { title.text = it.toString() }
+            }
+        }
+        viewLifecycleOwner.lifecycleScope.launch {
+            repeatOnLifecycle(Lifecycle.State.STARTED) {
+                viewModel.stateImage.collect { image.setImageResource(it) }
             }
         }
 
@@ -80,14 +78,14 @@ class TrackerFragment : Fragment() {
         }
     }
 
-    private fun setButtons(buttonToCharacter: View, buttonToNotes: View, buttonToTracker: View) {
+    private fun setButtons(buttonToSettings: View, buttonToNotes: View, buttonToTracker: View) {
         buttonToNotes.setOnClickListener {
             parentFragmentManager.beginTransaction()
-                .replace(R.id.container, NotesFragment.newInstance()).commit()
+                .add(R.id.container, NotesFragment.newInstance()).commit()
         }
-        buttonToCharacter.setOnClickListener {
+        buttonToSettings.setOnClickListener {
             parentFragmentManager.beginTransaction()
-                .replace(R.id.container, CharacterFragment.newInstance()).commit()
+                .add(R.id.container, SettingsFragment.newInstance()).commit()
         }
         buttonToTracker.setOnClickListener {
             context?.startForegroundService(
@@ -112,6 +110,5 @@ class TrackerFragment : Fragment() {
 
     companion object {
         fun newInstance() = TrackerFragment()
-        private const val TAG = "TrackerFragment"
     }
 }

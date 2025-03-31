@@ -9,8 +9,25 @@
         <item name="colorSecondary">@color/teal_200</item>
         <item name="colorSecondaryVariant">@color/teal_700</item>
         <item name="colorOnSecondary">@color/black</item>
-        <!-- Status bar color. -->
-        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
-        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="TextAppearance.ImGoingOnAnAdventure.Large" parent="TextAppearance.AppCompat.Large">
+        <item name="android:textColor">@color/palette9</item>
+        <item name="font">@font/kelmscott</item>
+        <item name="fontFamily">@font/kelmscott</item>
+    </style>
+
+    <style name="TextAppearance.ImGoingOnAnAdventure.Body" parent="TextAppearance.AppCompat.Medium">
+        <item name="android:textColor">@color/palette9</item>
+        <item name="font">@font/lateef_regular</item>
+        <item name="fontFamily">@font/lateef_regular</item>
+        <item name="textOutlineColor">@color/white</item>
+        <item name="textOutlineThickness">2dp</item>
+    </style>
+
+    <style name="TextAppearance.ImGoingOnAnAdventure.Medium" parent="TextAppearance.AppCompat.Medium">
+        <item name="android:textColor">@color/palette9</item>
+        <item name="font">@font/lateef_semibold</item>
+        <item name="fontFamily">@font/lateef_semibold</item>
     </style>
 </resources>

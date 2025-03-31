@@ -24,8 +24,11 @@ class AppModuleImpl(private val applicationContext: Context) : AppModule {
 
     private val eventDataSource: EventDataSource = EventDataSource(applicationContext)
 
+    private val mapperModule: MapperModule
+        get() = MapperModuleImpl()
+
     override val repositoryModule: RepositoryModule
-        get() = RepositoryModuleImpl(appDatabase, dataStore, eventDataSource)
+        get() = RepositoryModuleImpl(appDatabase, dataStore, eventDataSource, mapperModule)
 
     override val viewModuleModule: ViewModuleModule
         get() = ViewModuleModuleImpl(repositoryModule)

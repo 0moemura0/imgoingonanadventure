@@ -14,6 +14,7 @@ class RepositoryModuleImpl(
     private val appDatabase: AppDatabase,
     private val dataStore: SettingsDataStore,
     private val eventDataSource: EventDataSource,
+    private val mapperModule: MapperModule,
 ) : RepositoryModule {
 
     override val trackerRepository: TrackerRepository
@@ -21,5 +22,6 @@ class RepositoryModuleImpl(
             database = appDatabase,
             dataStore = dataStore,
             eventDataSource = eventDataSource,
+            routeIdToRouteMapper = mapperModule.routeIdToRouteMapper
         )
 }
