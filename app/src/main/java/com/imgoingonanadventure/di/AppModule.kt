@@ -11,6 +11,7 @@ interface AppModule {
     val repositoryModule: RepositoryModule
     val viewModuleModule: ViewModuleModule
     val crashLogger: CrashLogger
+    val dataStore: SettingsDataStore
 }
 
 class AppModuleImpl(private val applicationContext: Context) : AppModule {
@@ -20,7 +21,8 @@ class AppModuleImpl(private val applicationContext: Context) : AppModule {
             AppDatabase::class.java, "AppDatabase"
         ).build()
     }
-    private val dataStore: SettingsDataStore = SettingsDataStore(applicationContext)
+    override val dataStore: SettingsDataStore
+        get() = SettingsDataStore(applicationContext)
 
     private val eventDataSource: EventDataSource = EventDataSource(applicationContext)
 
@@ -31,7 +33,7 @@ class AppModuleImpl(private val applicationContext: Context) : AppModule {
         get() = RepositoryModuleImpl(appDatabase, dataStore, eventDataSource, mapperModule)
 
     override val viewModuleModule: ViewModuleModule
-        get() = ViewModuleModuleImpl(repositoryModule)
+        get() = ViewModuleModuleImpl(repositoryModule, dataStore)
 
     override val crashLogger: CrashLogger
         get() = CrashLogger(applicationContext)

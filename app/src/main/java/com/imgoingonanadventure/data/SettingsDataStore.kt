@@ -37,11 +37,10 @@ class SettingsDataStore(private val context: Context) {
             .map { preferences -> preferences[key] ?: false }
     }
 
-    suspend fun setStepLength() {
+    suspend fun setStepLength(newLength: Double) {
         context.dataStore.edit { settings ->
-            val key: Preferences.Key<Boolean> = booleanPreferencesKey(STEP_LENGTH)
-            val currentValue: Boolean = settings[key] ?: false
-            settings[key] = currentValue.not()
+            val key: Preferences.Key<Double> = doublePreferencesKey(STEP_LENGTH)
+            settings[key] = newLength
         }
     }
 

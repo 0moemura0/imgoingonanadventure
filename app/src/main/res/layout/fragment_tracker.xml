@@ -39,13 +39,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.8" />
+        app:layout_constraintGuide_percent="0.85" />
 
     <ImageView
         android:id="@+id/viewGrass"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:scaleType="centerCrop"
+        android:scaleType="fitXY"
         android:src="@drawable/grass"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toTopOf="@id/guideline_grass" />
@@ -84,8 +84,8 @@
 
     <View
         android:id="@+id/viewToSettings"
-        android:layout_width="60dp"
-        android:layout_height="70dp"
+        android:layout_width="52dp"
+        android:layout_height="65dp"
         android:layout_margin="20dp"
         android:layout_marginStart="20dp"
         android:background="@drawable/palanir"
@@ -114,10 +114,9 @@
 
     <View
         android:id="@+id/viewToNotes"
-        android:layout_width="60dp"
+        android:layout_width="46dp"
         android:layout_height="60dp"
         android:layout_margin="20dp"
-        android:layout_marginEnd="20dp"
         android:background="@drawable/note"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -126,7 +125,7 @@
     <View
         android:id="@+id/viewToTracker"
         android:layout_width="60dp"
-        android:layout_height="60dp"
+        android:layout_height="41dp"
         android:layout_margin="20dp"
         android:background="@drawable/hike"
         app:layout_constraintBottom_toBottomOf="parent"

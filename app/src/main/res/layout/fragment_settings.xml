@@ -11,17 +11,73 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:padding="10dp">
 
         <TextView
             style="@style/TextAppearance.ImGoingOnAnAdventure.Body"
-            android:layout_width="0dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1" />
+            android:text="Step Lenght" />
 
         <EditText
+            android:id="@+id/stepLengthEditText"
             style="@style/TextAppearance.ImGoingOnAnAdventure.Body"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_weight="1"
+            android:background="@color/palette5"
+            android:cursorVisible="false"
+            android:gravity="end"
+            android:hint="0.5"
+            android:inputType="numberDecimal"
+            android:textColorHint="#55ffffff"
+            android:textCursorDrawable="@null" />
+
+        <TextView
+            style="@style/TextAppearance.ImGoingOnAnAdventure.Body"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="m" />
     </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <Button
+            android:id="@+id/crashButton"
+            style="@style/TextAppearance.ImGoingOnAnAdventure.Body"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:backgroundTint="@color/palette2"
+            android:text="send crash log" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <!--        <Button-->
+        <!--            android:id="@+id/introButton"-->
+        <!--            style="@style/TextAppearance.ImGoingOnAnAdventure.Body"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="match_parent"-->
+        <!--            android:backgroundTint="@color/palette2"-->
+        <!--            android:text="to see intro again" />-->
+    </LinearLayout>
+
+    <TextView
+        style="@style/TextAppearance.ImGoingOnAnAdventure.Medium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="@integer/material_motion_duration_long_1"
+        android:gravity="bottom|center_horizontal"
+        android:text="с любовью и отсутствием русских шрифтов" />
 </LinearLayout>

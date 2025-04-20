@@ -54,7 +54,8 @@ class TrackerRepository(
                     eventDao.addEventList(notReallyLocal)
                     notReallyLocal
                 }
-                val event: Event = source.findLast { it.distance <= distance }
+                val distanceInMile = distance / 1609 //todo usecase
+                val event: Event = source.findLast { it.distance <= distanceInMile }
                     ?: throw NullPointerException("no element in events list somehow")
                 // to usecase?
                 if (event.event == source.last().event) {

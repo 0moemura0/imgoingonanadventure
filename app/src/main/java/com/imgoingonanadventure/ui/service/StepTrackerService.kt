@@ -34,6 +34,23 @@ class StepTrackerService : Service() {
     private val sensorManager: SensorManager by lazy { applicationContext.getSystemService(Context.SENSOR_SERVICE) as SensorManager }
     private val sensor: Sensor? by lazy { sensorManager.getDefaultSensor(Sensor.TYPE_STEP_DETECTOR) }
     private val notificationBuilder by lazy { NotificationCompat.Builder(this, CHANNEL_ID) }
+
+    @SuppressLint("MissingPermission")
+    private val observer: (String) -> Unit = {
+        if (it.isNotEmpty() && it.isNotBlank()) {
+            val bigTextStyle = NotificationCompat.BigTextStyle()
+            bigTextStyle.setBigContentTitle("You're going on an adventure!")
+            bigTextStyle.bigText("new event! : $it")
+
+            val newNotification =
+                notificationBuilder
+                    .setSilent(false)
+                    .setStyle(bigTextStyle)
+                    .build()
+            NotificationManagerCompat.from(this).notify(NOTIFICATION_ID, newNotification)
+        }
+    }
+
     override fun onCreate() {
         super.onCreate()
         checkPermission()
@@ -47,6 +64,7 @@ class StepTrackerService : Service() {
         } else {
             startForeground(NOTIFICATION_ID, createNotification())
         }
+        observeEventLiveData()
         startStepCounter()
     }
 
@@ -167,6 +185,8 @@ class StepTrackerService : Service() {
 
         notificationBuilder.apply {
             setStyle(bigTextStyle)
+            setOngoing(true)
+            setOnlyAlertOnce(true)
             setWhen(System.currentTimeMillis())
             setSmallIcon(R.mipmap.ic_launcher)
             setLargeIcon(largeIconBitmap)
@@ -184,6 +204,7 @@ class StepTrackerService : Service() {
 
     override fun stopService(name: Intent?): Boolean {
         stopStepCounter()
+        liveEvent.removeObserver(observer)
         return super.stopService(name)
     }
 
@@ -201,8 +222,14 @@ class StepTrackerService : Service() {
 
     @SuppressLint("MissingPermission")
     private fun sendStepUpdate(stepCount: Int) {
+        val bigTextStyle = NotificationCompat.BigTextStyle()
+        bigTextStyle.setBigContentTitle("You're going on an adventure!")
+        bigTextStyle.bigText("$stepCount steps")
+
         val newNotification =
             notificationBuilder
+                .setStyle(bigTextStyle)
+                .setSilent(true)
                 .setContentText("$stepCount steps")
                 .build()
 
@@ -214,10 +241,16 @@ class StepTrackerService : Service() {
     private fun sendTextUpdate(text: String) {
         val newNotification =
             notificationBuilder
+                .setSilent(true)
                 .setSubText(text)
                 .build()
 
         NotificationManagerCompat.from(this).notify(NOTIFICATION_ID, newNotification)
+    }
+
+    @SuppressLint("MissingPermission")
+    private fun observeEventLiveData() {
+        liveEvent.observeForever(observer)
     }
 
     private fun stopStepCounter() {
@@ -227,12 +260,13 @@ class StepTrackerService : Service() {
 
     companion object {
         val liveStepCount: MutableLiveData<Int> = MutableLiveData()
+        val liveEvent: MutableLiveData<String> = MutableLiveData()
 
         private const val TAG = "StepTrackerService"
 
         private const val NOTIFICATION_ID = 1234567890
         private const val CHANNEL_ID = "StepTrackerServiceChannelId"
-        private const val CHANNEL_NAME = "StepTrackerServiceChannel"
+        private const val CHANNEL_NAME = "Step Tracker Channel"
 
         const val ACTION_START_FOREGROUND_SERVICE: String = "ACTION_START_FOREGROUND_SERVICE"
         const val ACTION_STOP_FOREGROUND_SERVICE: String = "ACTION_STOP_FOREGROUND_SERVICE"

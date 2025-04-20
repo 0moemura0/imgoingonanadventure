@@ -35,7 +35,7 @@ class CrashLogger(private val context: Context) : Thread.UncaughtExceptionHandle
     }
 
     private fun getLogFile(context: Context): File {
-        val file = File(context.filesDir, LOG_FILE_NAME)
+        val file = File(context.cacheDir, LOG_FILE_NAME)
         if (!file.exists()) {
             file.createNewFile()
         }
@@ -47,7 +47,7 @@ class CrashLogger(private val context: Context) : Thread.UncaughtExceptionHandle
     }
 
     private companion object {
-        const val LOG_FILE_NAME = "logs.txt"
+        const val LOG_FILE_NAME = "logs.log"
         const val LOG_TAG = "LOG_TAG"
     }
 }

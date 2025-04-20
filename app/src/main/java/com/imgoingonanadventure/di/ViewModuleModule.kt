@@ -2,6 +2,8 @@ package com.imgoingonanadventure.di
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
+import com.imgoingonanadventure.data.SettingsDataStore
+import com.imgoingonanadventure.ui.settings.SettingsViewModel
 import com.imgoingonanadventure.ui.splash.SplashViewModel
 import com.imgoingonanadventure.ui.tracker.TrackerViewModel
 
@@ -12,7 +14,10 @@ interface ViewModuleModule {
     val settingsViewModelFactory: ViewModelProvider.Factory
 }
 
-class ViewModuleModuleImpl(private val repositoryModule: RepositoryModule) : ViewModuleModule {
+class ViewModuleModuleImpl(
+    private val repositoryModule: RepositoryModule,
+    private val dataStore: SettingsDataStore,
+) : ViewModuleModule {
 
     override val trackerViewModelFactory: ViewModelProvider.Factory
         get() = viewModelFactory { TrackerViewModel(repositoryModule.trackerRepository) }
@@ -21,7 +26,7 @@ class ViewModuleModuleImpl(private val repositoryModule: RepositoryModule) : Vie
         get() = viewModelFactory { SplashViewModel(repositoryModule.trackerRepository) }
 
     override val settingsViewModelFactory: ViewModelProvider.Factory
-        get() = viewModelFactory { SplashViewModel(repositoryModule.trackerRepository) }
+        get() = viewModelFactory { SettingsViewModel(dataStore) }
 }
 
 @Suppress("UNCHECKED_CAST")

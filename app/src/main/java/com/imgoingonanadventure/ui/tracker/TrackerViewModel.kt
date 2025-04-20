@@ -38,10 +38,12 @@ class TrackerViewModel(private val trackerRepository: TrackerRepository) : ViewM
 
     fun getStepState() {
         viewModelScope.launch {
-            Log.e(TAG, "getStepState: ")
             updateStateWith(
                 distance = trackerRepository.getDistance()
             )
+        }
+        viewModelScope.launch {
+            _stateStep.update { trackerRepository.getStepCount() }
         }
     }
 
@@ -56,7 +58,8 @@ class TrackerViewModel(private val trackerRepository: TrackerRepository) : ViewM
     private suspend fun updateStateWith(distance: Flow<Double>) {
         viewModelScope.launch {
             distance.collect { newDistance ->
-                _stateDistance.update { newDistance }
+                val distanceInKilometers = newDistance / 1000
+                _stateDistance.update { distanceInKilometers }
             }
         }
 

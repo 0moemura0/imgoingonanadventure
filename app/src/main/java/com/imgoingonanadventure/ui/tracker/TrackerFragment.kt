@@ -1,13 +1,13 @@
 package com.imgoingonanadventure.ui.tracker
 
 import android.Manifest.permission.ACTIVITY_RECOGNITION
+import android.Manifest.permission.POST_NOTIFICATIONS
 import android.content.Intent
+import android.os.Build
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.ImageView
-import android.widget.TextView
 import androidx.core.content.PermissionChecker
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
@@ -15,11 +15,12 @@ import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.lifecycleScope
 import androidx.lifecycle.repeatOnLifecycle
 import com.imgoingonanadventure.App
-import com.imgoingonanadventure.ui.notes.NotesFragment
 import com.imgoingonanadventure.ui.service.StepTrackerService
 import com.imgoingonanadventure.ui.settings.SettingsFragment
 import com.imgoingontheadventure.R
+import com.imgoingontheadventure.databinding.FragmentTrackerBinding
 import kotlinx.coroutines.launch
+
 
 class TrackerFragment : Fragment() {
 
@@ -27,53 +28,56 @@ class TrackerFragment : Fragment() {
         App.appModule.viewModuleModule.trackerViewModelFactory
     }
 
+    private var _binding: FragmentTrackerBinding? = null
+    private val binding get() = _binding!!
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        viewModel.getStepState()
+    }
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?,
     ): View {
-        return inflater.inflate(R.layout.fragment_tracker, container, false)
+        _binding = FragmentTrackerBinding.inflate(inflater, container, false)
+        val view = binding.root
+        return view
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
-        val image: ImageView = view.findViewById(R.id.imageBackground)
-        val imageGrass: ImageView = view.findViewById(R.id.viewGrass)
-        val subtitle: TextView = view.findViewById(R.id.trackerSubtitle)
-        val title: TextView = view.findViewById(R.id.trackerTitle)
-        val buttonToSettings: View = view.findViewById(R.id.viewToSettings)
-        val buttonToNotes: View = view.findViewById(R.id.viewToNotes)
-        val buttonToTracker: View = view.findViewById(R.id.viewToTracker)
-
-        setButtons(buttonToSettings, buttonToNotes, buttonToTracker)
-        observeData(subtitle, title, image, imageGrass)
-
-        viewModel.getStepState()
-
+        setButtons()
+        observeData()
         checkPermission()
     }
 
-    private fun observeData(
-        subtitle: TextView,
-        title: TextView,
-        image: ImageView,
-        imageGrass: ImageView
-    ) {
+    override fun onResume() {
+        super.onResume()
+        if (StepTrackerService.liveStepCount.isInitialized && StepTrackerService.liveStepCount.value != null) {
+            viewModel.setStepCount(StepTrackerService.liveStepCount.value!!)
+        }
+    }
+
+    private fun observeData() {
         viewLifecycleOwner.lifecycleScope.launch {
             repeatOnLifecycle(Lifecycle.State.STARTED) {
-                viewModel.stateEvent.collect { subtitle.text = it }
+                viewModel.stateEvent.collect {
+                    //StepTrackerService.liveEvent.postValue(it)
+                    binding.trackerSubtitle.text = it
+                }
             }
         }
         viewLifecycleOwner.lifecycleScope.launch {
             repeatOnLifecycle(Lifecycle.State.STARTED) {
-                viewModel.stateDistance.collect { title.text = it.toString() }
+                viewModel.stateDistance.collect { binding.trackerTitle.text = "$it km" }
             }
         }
         viewLifecycleOwner.lifecycleScope.launch {
             repeatOnLifecycle(Lifecycle.State.STARTED) {
                 viewModel.stateImage.collect {
-                    imageGrass.setImageResource(it.grassId)
-                    image.setImageResource(it.imageId)
+                    binding.viewGrass.setImageResource(it.grassId)
+                    binding.imageBackground.setImageResource(it.imageId)
                 }
             }
         }
@@ -83,16 +87,20 @@ class TrackerFragment : Fragment() {
         }
     }
 
-    private fun setButtons(buttonToSettings: View, buttonToNotes: View, buttonToTracker: View) {
-        buttonToNotes.setOnClickListener {
+    private fun setButtons() {
+//        binding.viewToNotes.setOnClickListener {
+//            parentFragmentManager.beginTransaction()
+//                .replace(R.id.container, NotesFragment.newInstance())
+//                .addToBackStack(BACK_STACK)
+//                .commit()
+//        }
+        binding.viewToSettings.setOnClickListener {
             parentFragmentManager.beginTransaction()
-                .add(R.id.container, NotesFragment.newInstance()).commit()
+                .replace(R.id.container, SettingsFragment.newInstance())
+                .addToBackStack(BACK_STACK)
+                .commit()
         }
-        buttonToSettings.setOnClickListener {
-            parentFragmentManager.beginTransaction()
-                .add(R.id.container, SettingsFragment.newInstance()).commit()
-        }
-        buttonToTracker.setOnClickListener {
+        binding.viewToTracker.setOnClickListener {
             context?.startForegroundService(
                 Intent(
                     requireContext(),
@@ -104,16 +112,25 @@ class TrackerFragment : Fragment() {
 
     private fun checkPermission() {
         val activityPermission = ACTIVITY_RECOGNITION
+        val requestedPermissionArray = arrayOf(activityPermission)
         val activityRecognitionPermission =
             PermissionChecker.checkSelfPermission(requireContext(), activityPermission)
 
         if (activityRecognitionPermission != PermissionChecker.PERMISSION_GRANTED) {
             @Suppress("DEPRECATION")
-            requestPermissions(arrayOf(activityPermission), 1)//todo add result
+            requestPermissions(
+                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
+                    requestedPermissionArray.plus(POST_NOTIFICATIONS)
+                } else {
+                    requestedPermissionArray
+                },
+                1
+            )//todo add result
         }
     }
 
     companion object {
         fun newInstance() = TrackerFragment()
+        private const val BACK_STACK = "trackerBackStack"
     }
 }
