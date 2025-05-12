@@ -8,12 +8,8 @@ import android.view.ViewGroup
 import androidx.core.content.FileProvider
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
-import androidx.lifecycle.Lifecycle
-import androidx.lifecycle.lifecycleScope
-import androidx.lifecycle.repeatOnLifecycle
 import com.imgoingonanadventure.App
 import com.imgoingontheadventure.databinding.FragmentSettingsBinding
-import kotlinx.coroutines.launch
 import java.io.File
 
 class SettingsFragment : Fragment() {
@@ -25,8 +21,7 @@ class SettingsFragment : Fragment() {
     private var _binding: FragmentSettingsBinding? = null
     private val binding get() = _binding!!
     override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
+        inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?
     ): View {
         _binding = FragmentSettingsBinding.inflate(inflater, container, false)
         val view = binding.root
@@ -36,11 +31,6 @@ class SettingsFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        viewLifecycleOwner.lifecycleScope.launch {
-            repeatOnLifecycle(Lifecycle.State.STARTED) {
-                viewModel.state.collect { binding.stepLengthEditText.setText(it.toString()) }
-            }
-        }
         binding.crashButton.setOnClickListener {
             val sendIntent: Intent = Intent().apply {
                 val uri = FileProvider.getUriForFile(
@@ -65,6 +55,9 @@ class SettingsFragment : Fragment() {
 //        }
 
         viewModel.getStepLength()
+        viewModel.state.observe(viewLifecycleOwner) {
+            binding.stepLengthEditText.setText(it.toString())
+        }
     }
 
     override fun onPause() {

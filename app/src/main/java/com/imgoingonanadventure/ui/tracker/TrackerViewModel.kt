@@ -54,22 +54,21 @@ class TrackerViewModel(private val trackerRepository: TrackerRepository) : ViewM
         viewModelScope.launch { updateStateWith(distance = distance) }
     }
 
-    @OptIn(ExperimentalCoroutinesApi::class)
-    private suspend fun updateStateWith(distance: Flow<Double>) {
+    private fun updateStateWith(distance: Flow<Double>) {
         viewModelScope.launch {
             distance.collect { newDistance ->
                 val distanceInKilometers = newDistance / 1000
                 _stateDistance.update { distanceInKilometers }
             }
         }
-
+        @OptIn(ExperimentalCoroutinesApi::class)
         viewModelScope.launch {
             distance
                 .map { trackerRepository.getDistancesEvent(it) }
                 .flattenConcat()
                 .map { it.event }
                 .catch { Log.e(TAG, "updateStateWith event: ", it) }
-                .collect { newEvent ->
+                .collect { newEvent: String ->
                     _stateEvent.update { newEvent }
                 }
         }
@@ -78,7 +77,9 @@ class TrackerViewModel(private val trackerRepository: TrackerRepository) : ViewM
             trackerRepository.getRouteName()
                 .map { getRouteSetting(it) }
                 .catch { Log.e(TAG, "updateStateWith: image", it) }
-                .collect { newSetting -> _stateImage.update { newSetting } }
+                .collect { newSetting ->
+                    _stateImage.update { newSetting }
+                }
         }
     }
 

@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_gravity="center"
     android:background="@drawable/gradient_background"
     android:orientation="vertical"
     tools:context="com.imgoingonanadventure.ui.tracker.TrackerFragment">
@@ -132,11 +133,12 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@id/guideline_grass" />
 
-    <TextView
+    <com.imgoingonanadventure.ui.view.StrokedTextView
         android:id="@+id/trackerTitle"
         style="@style/TextAppearance.ImGoingOnAnAdventure.Body"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
         android:fontFamily="@font/lateef_semibold"
         android:gravity="center"
         android:padding="10dp"
@@ -148,16 +150,18 @@
         app:layout_constraintBottom_toBottomOf="@id/top_line"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@id/top_line" />
+        app:layout_constraintTop_toTopOf="@id/top_line"
+        app:strokeColor="@color/white"
+        app:strokeThickness="4dp" />
 
-    <TextView
+    <com.imgoingonanadventure.ui.view.StrokedTextView
         android:id="@+id/trackerSubtitle"
         style="@style/TextAppearance.ImGoingOnAnAdventure.Medium"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
         android:layout_marginHorizontal="10dp"
         android:gravity="center"
-        android:lineBreakStyle="strict"
         android:padding="10dp"
         android:shadowColor="@color/white"
         android:shadowDx="0.0"
@@ -167,6 +171,8 @@
         app:layout_constraintBottom_toTopOf="@id/bottom_line"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/top_line" />
+        app:layout_constraintTop_toBottomOf="@id/top_line"
+        app:strokeColor="@color/white"
+        app:strokeThickness="4dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

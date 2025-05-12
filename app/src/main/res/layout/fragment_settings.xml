@@ -18,7 +18,7 @@
             style="@style/TextAppearance.ImGoingOnAnAdventure.Body"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Step Lenght" />
+            android:text="Ширина шага" />
 
         <EditText
             android:id="@+id/stepLengthEditText"
@@ -28,19 +28,16 @@
             android:layout_marginStart="20dp"
             android:layout_weight="1"
             android:background="@color/palette5"
-            android:cursorVisible="false"
             android:gravity="end"
             android:hint="0.5"
-            android:inputType="numberDecimal"
-            android:textColorHint="#55ffffff"
-            android:textCursorDrawable="@null" />
+            android:inputType="numberDecimal" />
 
         <TextView
             style="@style/TextAppearance.ImGoingOnAnAdventure.Body"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
-            android:text="m" />
+            android:text="м" />
     </LinearLayout>
 
     <LinearLayout
@@ -55,7 +52,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:backgroundTint="@color/palette2"
-            android:text="send crash log" />
+            android:text="отправить логи" />
     </LinearLayout>
 
     <LinearLayout
@@ -64,13 +61,13 @@
         android:orientation="horizontal"
         android:padding="10dp">
 
-        <!--        <Button-->
-        <!--            android:id="@+id/introButton"-->
-        <!--            style="@style/TextAppearance.ImGoingOnAnAdventure.Body"-->
-        <!--            android:layout_width="match_parent"-->
-        <!--            android:layout_height="match_parent"-->
-        <!--            android:backgroundTint="@color/palette2"-->
-        <!--            android:text="to see intro again" />-->
+        <Button
+            android:id="@+id/introButton"
+            style="@style/TextAppearance.ImGoingOnAnAdventure.Body"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:backgroundTint="@color/palette2"
+            android:text="посмотреть интро еще раз" />
     </LinearLayout>
 
     <TextView
