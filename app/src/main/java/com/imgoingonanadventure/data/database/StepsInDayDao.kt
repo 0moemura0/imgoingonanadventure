@@ -13,7 +13,7 @@ interface StepsInDayDao {
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     suspend fun insertStepsInDay(stepsInDay: StepsInDay)
 
-    @Update
+    @Update(onConflict = OnConflictStrategy.REPLACE)
     suspend fun updateStepsInDay(stepsInDay: StepsInDay)
 
     @Query("SELECT * FROM stepsinday WHERE date = :dateTime")

@@ -33,8 +33,7 @@ class TrackerRepository(
     // to usecase?
     fun getDistanceByStepCount(stepCount: Int): Flow<Double> {
         val stepLength = dataStore.getStepLength()
-        return stepLength
-            .map { length -> (stepCount * length) }
+        return stepLength.map { length -> (stepCount * length) }
     }
 
     suspend fun getDistance(): Flow<Double> {

@@ -13,6 +13,7 @@ import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.flow.catch
+import kotlinx.coroutines.flow.combine
 import kotlinx.coroutines.flow.flattenConcat
 import kotlinx.coroutines.flow.map
 import kotlinx.coroutines.flow.update
@@ -24,10 +25,6 @@ class TrackerViewModel(private val trackerRepository: TrackerRepository) : ViewM
     val stateDistance: StateFlow<Double>
         get() = _stateDistance.asStateFlow()
 
-    private val _stateStep: MutableStateFlow<Int> = MutableStateFlow(0)
-    private val stateStep: StateFlow<Int>
-        get() = _stateStep.asStateFlow()
-
     private val _stateEvent: MutableStateFlow<String> = MutableStateFlow("")
     val stateEvent: StateFlow<String>
         get() = _stateEvent.asStateFlow()
@@ -38,20 +35,16 @@ class TrackerViewModel(private val trackerRepository: TrackerRepository) : ViewM
 
     fun getStepState() {
         viewModelScope.launch {
-            updateStateWith(
-                distance = trackerRepository.getDistance()
-            )
-        }
-        viewModelScope.launch {
-            _stateStep.update { trackerRepository.getStepCount() }
+            updateStateWith(trackerRepository.getDistance())
         }
     }
 
     fun setStepCount(newSteps: Int) {
-        val stepStateData = stateStep.value
-        val newCount = stepStateData + newSteps
-        val distance = trackerRepository.getDistanceByStepCount(newCount)
-        viewModelScope.launch { updateStateWith(distance = distance) }
+        viewModelScope.launch {
+            val stepSum = trackerRepository.getDistance()
+                .combine(trackerRepository.getDistanceByStepCount(newSteps)) { old, new -> old + new }
+            updateStateWith(stepSum)
+        }
     }
 
     private fun updateStateWith(distance: Flow<Double>) {
