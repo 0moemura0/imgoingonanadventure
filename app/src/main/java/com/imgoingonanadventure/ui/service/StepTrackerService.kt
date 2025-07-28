@@ -55,26 +55,10 @@ class StepTrackerService : Service() {
     }
 
     override fun onStartCommand(intent: Intent?, flags: Int, startId: Int): Int {
+        checkPermission()
         if (intent != null) {
             val action = intent.action
             if (action != null) when (action) {
-                ACTION_START_FOREGROUND_SERVICE -> {
-                    Log.d(TAG, "Foreground service is started.")
-                    checkPermission()
-                    notificationDecorator.createChannel()
-                    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.UPSIDE_DOWN_CAKE) {
-                        startForeground(
-                            NOTIFICATION_ID,
-                            notificationDecorator.createNotification(),
-                            ServiceInfo.FOREGROUND_SERVICE_TYPE_HEALTH
-                        )
-                    } else {
-                        startForeground(NOTIFICATION_ID, notificationDecorator.createNotification())
-                    }
-                    notificationDecorator.sendTextUpdate("Counting!")
-                    startStepCounter()
-                }
-
                 ACTION_STOP_FOREGROUND_SERVICE -> {
                     stopStepCounter()
                     stopForeground(STOP_FOREGROUND_REMOVE)
@@ -92,7 +76,7 @@ class StepTrackerService : Service() {
                 }
             }
         }
-        return super.onStartCommand(intent, flags, startId)
+        return START_STICKY
     }
 
     private fun checkPermission() {
@@ -153,7 +137,6 @@ class StepTrackerService : Service() {
 
         private const val TAG = "StepTrackerService"
 
-        const val ACTION_START_FOREGROUND_SERVICE: String = "ACTION_START_FOREGROUND_SERVICE"
         const val ACTION_STOP_FOREGROUND_SERVICE: String = "ACTION_STOP_FOREGROUND_SERVICE"
         const val ACTION_PAUSE: String = "ACTION_PAUSE"
         const val ACTION_PLAY: String = "ACTION_PLAY"
