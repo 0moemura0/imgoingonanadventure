@@ -127,7 +127,6 @@ class StepTrackerService : Service() {
     }
 
     private fun stopStepCounter() {
-        listener.stop()
         sensorManager.unregisterListener(listener, sensor)
     }
 

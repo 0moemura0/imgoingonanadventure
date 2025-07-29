@@ -71,7 +71,7 @@ class TrackerRepository(
     suspend fun setOrAddStepCount(stepSession: Int) {
         Log.e("TAG", "setOrAddStepCount: $stepSession")
         withContext(defaultDispatcher) {
-            val today: DateTime = DateTime.now()
+            val today: DateTime = DateTime.now().withTimeAtStartOfDay()
             val stepsBefore: StepsInDay? = stepsInDayDao.getStepsInDay(today)
             if (stepsBefore != null) {
                 val stepsNow = stepsBefore.count + stepSession

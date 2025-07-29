@@ -21,16 +21,13 @@ class StepCountEventListener(
 
         val stepsSinceLastReboot: Int = event.values[0].toInt()
         steps += stepsSinceLastReboot
+        scope.launch { trackerRepository.setOrAddStepCount(steps) }
         update(steps)
         Log.d(TAG, "Steps: $steps")
     }
 
     override fun onAccuracyChanged(sensor: Sensor?, accuracy: Int) {
         Log.d(TAG, "Accuracy changed to: $accuracy")
-    }
-
-    fun stop() {
-        scope.launch { trackerRepository.setOrAddStepCount(steps) }
     }
 
     companion object {
