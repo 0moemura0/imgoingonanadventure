@@ -10,7 +10,7 @@ import com.imgoingonanadventure.model.StepsInDay
 import org.joda.time.DateTime
 
 @Dao
-interface NoteDao {
+interface NotesDao {
 
     @Insert
     suspend fun insertNote(note: Note)

@@ -6,7 +6,6 @@ import com.imgoingonanadventure.di.AppModuleImpl
 
 class App : Application() {
 
-    //todo утечка?
     companion object {
         lateinit var appModule: AppModule
     }

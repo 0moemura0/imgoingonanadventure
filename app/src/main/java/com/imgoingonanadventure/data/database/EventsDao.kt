@@ -7,7 +7,7 @@ import androidx.room.Query
 import com.imgoingonanadventure.model.Event
 
 @Dao
-interface EventDao {
+interface EventsDao {
 
     @Query("SELECT * FROM event")
     suspend fun getAll(): List<Event>

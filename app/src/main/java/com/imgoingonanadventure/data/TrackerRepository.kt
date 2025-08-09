@@ -2,7 +2,8 @@ package com.imgoingonanadventure.data
 
 import android.util.Log
 import com.imgoingonanadventure.data.database.AppDatabase
-import com.imgoingonanadventure.data.database.EventDao
+import com.imgoingonanadventure.data.database.EventsDao
+import com.imgoingonanadventure.data.database.EventsDatabase
 import com.imgoingonanadventure.data.database.StepsInDayDao
 import com.imgoingonanadventure.model.Event
 import com.imgoingonanadventure.model.Route
@@ -17,15 +18,16 @@ import kotlinx.coroutines.withContext
 import org.joda.time.DateTime
 
 class TrackerRepository(
-    database: AppDatabase,
+    appDatabase: AppDatabase,
+    eventsDatabase: EventsDatabase,
     private val dataStore: SettingsDataStore,
     private val eventDataSource: EventDataSource,
     private val routeIdToRouteMapper: RouteIdToRouteMapper,
 ) {
 
     private val defaultDispatcher: CoroutineDispatcher = Dispatchers.IO
-    private val eventDao: EventDao = database.eventDao()
-    private val stepsInDayDao: StepsInDayDao = database.stepsInDayDao()
+    private val eventsDao: EventsDao = eventsDatabase.eventsDao()
+    private val stepsInDayDao: StepsInDayDao = appDatabase.stepsInDayDao()
 
 
     suspend fun getStepCount(): Int = withContext(defaultDispatcher) { stepsInDayDao.countSteps() }
@@ -47,10 +49,10 @@ class TrackerRepository(
     suspend fun getDistancesEvent(distance: Double): Flow<Event> {
         return withContext(defaultDispatcher) {
             dataStore.getEventChunkId().map { chunkId ->
-                val local = eventDao.getListWithId(chunkId)
+                val local = eventsDao.getListWithId(chunkId)
                 val source: List<Event> = local.ifEmpty {
                     val notReallyLocal = eventDataSource.getEventList(chunkId)
-                    eventDao.addEventList(notReallyLocal)
+                    eventsDao.addEventList(notReallyLocal)
                     notReallyLocal
                 }
                 val distanceInMile = distance / 1609 //todo usecase
